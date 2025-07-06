@@ -1,0 +1,58 @@
+{
+      "name": "Dragon Ball Trunks",
+      "type": "dark",
+      "tokenColors": [
+        { "scope": ["keyword"], "settings": { "foreground": "#B19CD9", "fontStyle": "bold" } }, // Lavender
+        { "scope": ["entity.name.function"], "settings": { "foreground": "#7FFFD4", "fontStyle": "italic" } }, // Aquamarine (sword)
+        { "scope": ["variable"], "settings": { "foreground": "#E8D8FF" } }, // Pale lavender
+        { "scope": ["string"], "settings": { "foreground": "#B19CD9" } }, // Lavender
+        { "scope": ["comment"], "settings": { "foreground": "#8C7CA0", "fontStyle": "italic" } }, // Muted lavender
+        { "scope": ["constant.numeric"], "settings": { "foreground": "#7FFFD4" } }, // Aquamarine
+        { "scope": ["storage.type"], "settings": { "foreground": "#B19CD9", "fontStyle": "bold" } }, // Lavender
+        { "scope": ["entity.name.namespace.go"], "settings": { "foreground": "#7FFFD4", "fontStyle": "bold" } }, // Aquamarine
+        { "scope": ["entity.name.import.go"], "settings": { "foreground": "#B19CD9", "fontStyle": "bold" } }, // Lavender
+        { "scope": ["variable.other.package.go"], "settings": { "foreground": "#B19CD9", "fontStyle": "bold" } },
+        { "scope": ["entity.name.import.path.go"], "settings": { "foreground": "#7FFFD4", "fontStyle": "bold underline" } } // Aquamarine, underlined
+      ],
+      "colors": {
+        "activityBar.background": "#B19CD9",
+        "activityBar.foreground": "#E8D8FF",
+        "activityBar.activeBorder": "#7FFFD4",
+        "activityBar.inactiveForeground": "#E8D8FF99",
+        "activityBarBadge.background": "#7FFFD4",
+        "activityBarBadge.foreground": "#1E1B30",
+"editor.background": "#1E1B30", // Deep lavender (hair)
+        "editor.foreground": "#E8D8FF", // Pale lavender (aura)
+        "editorCursor.foreground": "#B19CD9", // Lavender (energy)
+        "editor.lineHighlightBackground": "#2E2B40", // Slightly lighter lavender
+        "editor.selectionBackground": "#B19CD955", // Lavender, semi-transparent
+        "editor.selectionHighlightBackground": "#B19CD933", // Lighter lavender
+        "editorIndentGuide.background1": "#2E2B40",
+        "editorIndentGuide.activeBackground1": "#B19CD9", // Lavender
+        "editorLineNumber.foreground": "#8C7CA0", // Muted lavender
+        "editorLineNumber.activeForeground": "#B19CD9", // Lavender      
+        "sideBar.background": "#2E2B40",
+        "sideBar.foreground": "#E8D8FF",
+        "sideBarSectionHeader.background": "#B19CD933",
+        "sideBarSectionHeader.foreground": "#7FFFD4",
+        "statusBar.background": "#B19CD9",
+        "statusBar.foreground": "#1E1B30",
+        "statusBar.noFolderBackground": "#2E2B40",
+        "statusBar.debuggingBackground": "#7FFFD4",
+        "statusBar.debuggingForeground": "#1E1B30",
+        "titleBar.activeBackground": "#B19CD9",
+        "titleBar.activeForeground": "#E8D8FF",
+        "titleBar.inactiveBackground": "#2E2B40",
+        "titleBar.inactiveForeground": "#E8D8FF99",
+        "tab.activeBackground": "#B19CD9",
+        "tab.activeForeground": "#7FFFD4",
+        "tab.inactiveBackground": "#2E2B40",
+        "tab.inactiveForeground": "#E8D8FF99",
+        "tab.border": "#7FFFD4",
+        "tab.activeBorder": "#7FFFD4",
+        "tab.unfocusedActiveBorder": "#7FFFD499",
+        "panel.background": "#2E2B40",
+        "panel.border": "#7FFFD4",
+        "editorGroupHeader.tabsBackground": "#2E2B40"
+      }
+    }
