@@ -1,0 +1,58 @@
+{
+      "name": "Dragon Ball Super Saiyan Blue",
+      "type": "dark",
+      "tokenColors": [
+        { "scope": ["keyword"], "settings": { "foreground": "#00BFFF", "fontStyle": "bold" } }, // Blue
+        { "scope": ["entity.name.function"], "settings": { "foreground": "#00FFFF", "fontStyle": "italic" } }, // Cyan
+        { "scope": ["variable"], "settings": { "foreground": "#E0FFFF" } }, // Pale blue
+        { "scope": ["string"], "settings": { "foreground": "#7FFFD4" } }, // Aquamarine
+        { "scope": ["comment"], "settings": { "foreground": "#7FCFFF", "fontStyle": "italic" } }, // Muted blue
+        { "scope": ["constant.numeric"], "settings": { "foreground": "#00FFFF" } }, // Cyan
+        { "scope": ["storage.type"], "settings": { "foreground": "#00BFFF", "fontStyle": "bold" } }, // Blue
+        { "scope": ["entity.name.namespace.go"], "settings": { "foreground": "#00FFFF", "fontStyle": "bold" } }, // Cyan
+        { "scope": ["entity.name.import.go"], "settings": { "foreground": "#00FFFF", "fontStyle": "bold" } },
+        { "scope": ["variable.other.package.go"], "settings": { "foreground": "#00FFFF", "fontStyle": "bold" } },
+        { "scope": ["entity.name.import.path.go"], "settings": { "foreground": "#00BFFF", "fontStyle": "bold underline" } }
+      ],
+      "colors": {
+        "activityBar.background": "#00BFFF",
+        "activityBar.foreground": "#E0FFFF",
+        "activityBar.activeBorder": "#00FFFF",
+        "activityBar.inactiveForeground": "#E0FFFF99",
+        "activityBarBadge.background": "#00FFFF",
+        "activityBarBadge.foreground": "#0B1B2B",
+        "editor.background": "#0B1B2B", // Deep blue (hair)
+        "editor.foreground": "#E0FFFF", // Pale blue (aura)
+        "editorCursor.foreground": "#00FFFF", // Cyan (energy)
+        "editor.lineHighlightBackground": "#15304A", // Slightly lighter blue
+        "editor.selectionBackground": "#00BFFF55", // Blue, semi-transparent
+        "editor.selectionHighlightBackground": "#00BFFF33", // Lighter blue
+        "editorIndentGuide.background1": "#15304A",
+        "editorIndentGuide.activeBackground1": "#00FFFF", // Cyan
+        "editorLineNumber.foreground": "#7FCFFF", // Muted blue
+        "editorLineNumber.activeForeground": "#00FFFF", // Cyan
+        "sideBar.background": "#15304A",
+        "sideBar.foreground": "#E0FFFF",
+        "sideBarSectionHeader.background": "#00BFFF33",
+        "sideBarSectionHeader.foreground": "#00FFFF",
+        "statusBar.background": "#00BFFF",
+        "statusBar.foreground": "#0B1B2B",
+        "statusBar.noFolderBackground": "#15304A",
+        "statusBar.debuggingBackground": "#00FFFF",
+        "statusBar.debuggingForeground": "#0B1B2B",
+        "titleBar.activeBackground": "#00BFFF",
+        "titleBar.activeForeground": "#E0FFFF",
+        "titleBar.inactiveBackground": "#15304A",
+        "titleBar.inactiveForeground": "#E0FFFF99",
+        "tab.activeBackground": "#00BFFF",
+        "tab.activeForeground": "#00FFFF",
+        "tab.inactiveBackground": "#15304A",
+        "tab.inactiveForeground": "#E0FFFF99",
+        "tab.border": "#00FFFF",
+        "tab.activeBorder": "#00FFFF",
+        "tab.unfocusedActiveBorder": "#00FFFF99",
+        "panel.background": "#15304A",
+        "panel.border": "#00FFFF",
+        "editorGroupHeader.tabsBackground": "#15304A"
+      }
+    }

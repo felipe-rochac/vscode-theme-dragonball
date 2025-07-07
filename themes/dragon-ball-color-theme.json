@@ -1,0 +1,131 @@
+{
+  "name": "Dragon Ball",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#2D2A2E",
+    "editor.foreground": "#FCFCFA",
+    "editorCursor.foreground": "#FF9800",
+    "editor.lineHighlightBackground": "#36343B",
+    "editor.selectionBackground": "#FF980055",
+    "editor.selectionHighlightBackground": "#FF980033",
+    "editorIndentGuide.background1": "#3B3A3E",
+    "editorIndentGuide.activeBackground1": "#1976D2",
+    "editorLineNumber.foreground": "#FF9800",
+    "editorLineNumber.activeForeground": "#1976D2",
+    "activityBar.background": "#FF9800",
+    "activityBar.foreground": "#FCFCFA",
+    "activityBar.activeBorder": "#1976D2",
+    "activityBar.inactiveForeground": "#FCFCFA99",
+    "activityBarBadge.background": "#1976D2",
+    "activityBarBadge.foreground": "#2D2A2E",
+    "sideBar.background": "#36343B",
+    "sideBar.foreground": "#FCFCFA",
+    "sideBarSectionHeader.background": "#FF980033",
+    "sideBarSectionHeader.foreground": "#1976D2",
+    "statusBar.background": "#FF9800",
+    "statusBar.foreground": "#2D2A2E",
+    "statusBar.noFolderBackground": "#36343B",
+    "statusBar.debuggingBackground": "#1976D2",
+    "statusBar.debuggingForeground": "#2D2A2E",
+    "titleBar.activeBackground": "#FF9800",
+    "titleBar.activeForeground": "#FCFCFA",
+    "titleBar.inactiveBackground": "#36343B",
+    "titleBar.inactiveForeground": "#FCFCFA99",
+    "tab.activeBackground": "#FF9800",
+    "tab.activeForeground": "#1976D2",
+    "tab.inactiveBackground": "#36343B",
+    "tab.inactiveForeground": "#FCFCFA99",
+    "tab.border": "#1976D2",
+    "tab.activeBorder": "#1976D2",
+    "tab.unfocusedActiveBorder": "#1976D299",
+    "panel.background": "#36343B",
+    "panel.border": "#1976D2",
+    "editorGroupHeader.tabsBackground": "#36343B"
+  },
+  "tokenColors": [
+    {
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "foreground": "#727072",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["keyword", "storage.type", "storage.modifier"],
+      "settings": {
+        "foreground": "#FF9800",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.function",
+        "meta.function-call.identifier",
+        "support.function"
+      ],
+      "settings": {
+        "foreground": "#1976D2",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["variable", "variable.parameter", "identifier"],
+      "settings": {
+        "foreground": "#FCFCFA"
+      }
+    },
+    {
+      "scope": ["string", "constant.other.symbol"],
+      "settings": {
+        "foreground": "#FF5252"
+      }
+    },
+    {
+      "scope": ["constant.numeric"],
+      "settings": {
+        "foreground": "#1976D2"
+      }
+    },
+    {
+      "scope": ["entity.name.type"],
+      "settings": {
+        "foreground": "#FF9800"
+      }
+    },
+    {
+      "scope": ["storage.type"],
+      "settings": {
+        "foreground": "#FF9800",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["entity.name.namespace.go"],
+      "settings": {
+        "foreground": "#1976D2",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["entity.name.import.go"],
+      "settings": {
+        "foreground": "#FF9800",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["variable.other.package.go"],
+      "settings": {
+        "foreground": "#FF9800",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["entity.name.import.path.go"],
+      "settings": {
+        "foreground": "#1976D2",
+        "fontStyle": "bold underline"
+      }
+    }
+  ]
+}
