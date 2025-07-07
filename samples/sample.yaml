@@ -1,0 +1,45 @@
+# sample.yaml
+# This sample demonstrates various YAML elements for theme testing.
+
+# Scalars
+string: "Hello, Dragon Ball!"
+integer: 9000
+float: 3.14
+boolean: true
+null_value: null
+
+# Sequences
+characters:
+  - Goku
+  - Vegeta
+  - Gohan
+  - Piccolo
+
+# Mappings
+power_levels:
+  Goku: 150000
+  Vegeta: 140000
+  Gohan: 120000
+
+# Nested structures
+sagas:
+  Saiyan:
+    main_villain: Vegeta
+    episodes: 35
+  Frieza:
+    main_villain: Frieza
+    episodes: 40
+
+# Anchors and aliases
+defaults: &defaults
+  race: Saiyan
+  planet: Earth
+
+Goten:
+  <<: *defaults
+  power_level: 80000
+
+# Multiline string
+description: |
+  This is a sample YAML file to test the Dragon Ball theme.
+  It includes various YAML features and Dragon Ball references.

@@ -1,0 +1,33 @@
+{
+    "name": "Dragon Ball Theme Sample",
+    "description": "Sample JSON to preview Dragon Ball VSCode theme colors.",
+    "characters": [
+        {
+            "name": "Goku",
+            "race": "Saiyan",
+            "powerLevel": 9001,
+            "transformations": ["Super Saiyan", "Super Saiyan Blue", "Ultra Instinct"]
+        },
+        {
+            "name": "Vegeta",
+            "race": "Saiyan",
+            "powerLevel": 8500,
+            "transformations": ["Super Saiyan", "Super Saiyan Blue", "Super Saiyan Blue Evolution"]
+        },
+        {
+            "name": "Piccolo",
+            "race": "Namekian",
+            "powerLevel": 3500,
+            "transformations": ["Fused with Nail", "Fused with Kami"]
+        }
+    ],
+    "dragonBalls": {
+        "total": 7,
+        "collected": 4,
+        "locations": ["Mount Paozu", "Capsule Corp", "Kami's Lookout", "Namek"]
+    },
+    "wish": {
+        "granted": false,
+        "requestedBy": "Bulma"
+    }
+}

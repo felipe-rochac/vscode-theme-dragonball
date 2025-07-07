@@ -2,57 +2,58 @@
       "name": "Dragon Ball Gohan",
       "type": "dark",
       "tokenColors": [
-        { "scope": ["keyword"], "settings": { "foreground": "#A084CA", "fontStyle": "bold" } }, // Purple
-        { "scope": ["entity.name.function"], "settings": { "foreground": "#FFD700", "fontStyle": "italic" } }, // Gold
-        { "scope": ["variable"], "settings": { "foreground": "#FFF7F0" } }, // Light
-        { "scope": ["string"], "settings": { "foreground": "#A084CA" } }, // Purple
-        { "scope": ["comment"], "settings": { "foreground": "#7C6BA0", "fontStyle": "italic" } }, // Muted purple
-        { "scope": ["constant.numeric"], "settings": { "foreground": "#FFD700" } }, // Gold
-        { "scope": ["storage.type"], "settings": { "foreground": "#A084CA", "fontStyle": "bold" } }, // Purple
-        { "scope": ["entity.name.namespace.go"], "settings": { "foreground": "#FFD700", "fontStyle": "bold" } }, // Gold
-        { "scope": ["entity.name.import.go"], "settings": { "foreground": "#A084CA", "fontStyle": "bold" } }, // Purple
-        { "scope": ["variable.other.package.go"], "settings": { "foreground": "#A084CA", "fontStyle": "bold" } },
-        { "scope": ["entity.name.import.path.go"], "settings": { "foreground": "#FFD700", "fontStyle": "bold underline" } } // Gold, underlined
+        { "scope": ["comment", "comment.line", "comment.block"], "settings": { "foreground": "#7C6BA0", "fontStyle": "italic" } },
+        { "scope": ["keyword", "keyword.control.go"], "settings": { "foreground": "#A084CA", "fontStyle": "bold" } }, // Purple
+        { "scope": ["entity.name.function", "entity.name.function.go"], "settings": { "foreground": "#FFD700", "fontStyle": "italic" } },
+        { "scope": ["variable", "variable.other.go"], "settings": { "foreground": "#FFF7F0" } }, // Light
+        { "scope": ["string", "string.quoted.double.go", "string.quoted.single.go"], "settings": { "foreground": "#A084CA" } }, // Purple
+        { "scope": ["constant.numeric", "constant.numeric.go"], "settings": { "foreground": "#FFD700" } }, // Gold
+        { "scope": ["storage.type", "storage.type.go"], "settings": { "foreground": "#A084CA", "fontStyle": "bold" } }, // Purple
+        { "scope": ["entity.name.namespace.go"], "settings": { "foreground": "#A084CA", "fontStyle": "bold" } },
+        { "scope": ["entity.name.import.go", "variable.other.package.go"], "settings": { "foreground": "#7C6BA0", "fontStyle": "bold" } },
+        { "scope": ["entity.name.import.path.go"], "settings": { "foreground": "#FFD700", "fontStyle": "bold underline" } }, // Gold, underlined
+        { "scope": ["source.go"], "settings": { "foreground": "#FFF7F0" } }
       ],
       "colors": {
-        "activityBar.background": "#A084CA",
+        // GitHub Dark base colors
+        "editor.background": "#0d1117",
+        "editor.foreground": "#FFF7F0",
+        "editorCursor.foreground": "#FFD700",
+        "editor.lineHighlightBackground": "#161b22",
+        "editor.selectionBackground": "#264f78",
+        "editor.selectionHighlightBackground": "#3b3b3b60",
+        "editorIndentGuide.background1": "#21262d",
+        "editorIndentGuide.activeBackground1": "#FFD700",
+        "editorLineNumber.foreground": "#7C6BA0",
+        "editorLineNumber.activeForeground": "#FFD700",
+        "activityBar.background": "#161b22",
         "activityBar.foreground": "#FFF7F0",
-        "activityBar.activeBorder": "#FFD700",
-        "activityBar.inactiveForeground": "#FFF7F099",
-        "activityBarBadge.background": "#FFD700",
-        "activityBarBadge.foreground": "#221C2F",
-        "editor.background": "#221C2F", // Deep purple (gi)
-        "editor.foreground": "#FFF7F0", // Light (aura)
-        "editorCursor.foreground": "#FFD700", // Gold (Super Saiyan aura)
-        "editor.lineHighlightBackground": "#2E2340", // Slightly lighter purple
-        "editor.selectionBackground": "#A084CA55", // Purple, semi-transparent
-        "editor.selectionHighlightBackground": "#A084CA33", // Lighter purple
-        "editorIndentGuide.background1": "#2E2340",
-        "editorIndentGuide.activeBackground1": "#FFD700", // Gold
-        "editorLineNumber.foreground": "#7C6BA0", // Muted purple
-        "editorLineNumber.activeForeground": "#FFD700", // Gold
-        "sideBar.background": "#2E2340",
+        "activityBar.activeBorder": "#A084CA",
+        "activityBar.inactiveForeground": "#6e7681",
+        "activityBarBadge.background": "#A084CA",
+        "activityBarBadge.foreground": "#161b22",
+        "sideBar.background": "#161b22",
         "sideBar.foreground": "#FFF7F0",
-        "sideBarSectionHeader.background": "#A084CA33",
-        "sideBarSectionHeader.foreground": "#FFD700",
-        "statusBar.background": "#A084CA",
-        "statusBar.foreground": "#221C2F",
-        "statusBar.noFolderBackground": "#2E2340",
+        "sideBarSectionHeader.background": "#21262d",
+        "sideBarSectionHeader.foreground": "#A084CA",
+        "statusBar.background": "#161b22",
+        "statusBar.foreground": "#FFF7F0",
+        "statusBar.noFolderBackground": "#161b22",
         "statusBar.debuggingBackground": "#FFD700",
-        "statusBar.debuggingForeground": "#221C2F",
-        "titleBar.activeBackground": "#A084CA",
+        "statusBar.debuggingForeground": "#161b22",
+        "titleBar.activeBackground": "#161b22",
         "titleBar.activeForeground": "#FFF7F0",
-        "titleBar.inactiveBackground": "#2E2340",
-        "titleBar.inactiveForeground": "#FFF7F099",
-        "tab.activeBackground": "#A084CA",
-        "tab.activeForeground": "#FFD700",
-        "tab.inactiveBackground": "#2E2340",
-        "tab.inactiveForeground": "#FFF7F099",
-        "tab.border": "#FFD700",
-        "tab.activeBorder": "#FFD700",
+        "titleBar.inactiveBackground": "#0d1117",
+        "titleBar.inactiveForeground": "#6e7681",
+        "tab.activeBackground": "#21262d",
+        "tab.activeForeground": "#A084CA",
+        "tab.inactiveBackground": "#161b22",
+        "tab.inactiveForeground": "#7C6BA0",
+        "tab.border": "#21262d",
+        "tab.activeBorder": "#A084CA",
         "tab.unfocusedActiveBorder": "#FFD70099",
-        "panel.background": "#2E2340",
-        "panel.border": "#FFD700",
-        "editorGroupHeader.tabsBackground": "#2E2340"
+        "panel.background": "#161b22",
+        "panel.border": "#A084CA",
+        "editorGroupHeader.tabsBackground": "#161b22"
       }
     }

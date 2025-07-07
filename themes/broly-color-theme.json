@@ -1,58 +1,58 @@
 {
       "name": "Dragon Ball Broly",
       "type": "dark",
-      "colors": {
-        "activityBar.background": "#99FF33",
-        "activityBar.foreground": "#DAFFCC",
-        "activityBar.activeBorder": "#FFD700",
-        "activityBar.inactiveForeground": "#DAFFCC99",
-        "activityBarBadge.background": "#FFD700",
-        "activityBarBadge.foreground": "#0F1E0F",
-        "sideBar.background": "#1E331E",
-        "sideBar.foreground": "#DAFFCC",
-        "sideBarSectionHeader.background": "#99FF3333",
-        "sideBarSectionHeader.foreground": "#FFD700",
-        "statusBar.background": "#99FF33",
-        "statusBar.foreground": "#0F1E0F",
-        "statusBar.noFolderBackground": "#1E331E",
-        "statusBar.debuggingBackground": "#FFD700",
-        "statusBar.debuggingForeground": "#0F1E0F",
-        "titleBar.activeBackground": "#99FF33",
-        "titleBar.activeForeground": "#DAFFCC",
-        "titleBar.inactiveBackground": "#1E331E",
-        "titleBar.inactiveForeground": "#DAFFCC99",
-        "tab.activeBackground": "#99FF33",
-        "tab.activeForeground": "#FFD700",
-        "tab.inactiveBackground": "#1E331E",
-        "tab.inactiveForeground": "#DAFFCC99",
-        "tab.border": "#FFD700",
-        "tab.activeBorder": "#FFD700",
-        "tab.unfocusedActiveBorder": "#FFD70099",
-        "panel.background": "#1E331E",
-        "panel.border": "#FFD700",
-        "editorGroupHeader.tabsBackground": "#1E331E",
-        "editor.background": "#0F1E0F", // Deep green (hair)
-        "editor.foreground": "#DAFFCC", // Pale green (aura)
-        "editorCursor.foreground": "#99FF33", // Bright green (energy)
-        "editor.lineHighlightBackground": "#1E331E", // Slightly lighter green
-        "editor.selectionBackground": "#99FF3355", // Green, semi-transparent
-        "editor.selectionHighlightBackground": "#99FF3333", // Lighter green
-        "editorIndentGuide.background1": "#1E331E",
-        "editorIndentGuide.activeBackground1": "#FFD700", // Gold
-        "editorLineNumber.foreground": "#6BA06B", // Muted green
-        "editorLineNumber.activeForeground": "#FFD700" // Gold
-      },
       "tokenColors": [
-        { "scope": ["keyword"], "settings": { "foreground": "#99FF33", "fontStyle": "bold" } }, // Bright green
-        { "scope": ["entity.name.function"], "settings": { "foreground": "#FFD700", "fontStyle": "italic" } }, // Gold
-        { "scope": ["variable"], "settings": { "foreground": "#DAFFCC" } }, // Pale green
-        { "scope": ["string"], "settings": { "foreground": "#BBFF66" } }, // Light green
-        { "scope": ["comment"], "settings": { "foreground": "#6BA06B", "fontStyle": "italic" } }, // Muted green
-        { "scope": ["constant.numeric"], "settings": { "foreground": "#FFD700" } }, // Gold
-        { "scope": ["storage.type"], "settings": { "foreground": "#99FF33", "fontStyle": "bold" } }, // Bright green
-        { "scope": ["entity.name.namespace.go"], "settings": { "foreground": "#FFD700", "fontStyle": "bold" } }, // Gold
-        { "scope": ["entity.name.import.go"], "settings": { "foreground": "#FFD700", "fontStyle": "bold" } },
-        { "scope": ["variable.other.package.go"], "settings": { "foreground": "#99FF33", "fontStyle": "bold" } },
-        { "scope": ["entity.name.import.path.go"], "settings": { "foreground": "#99FF33", "fontStyle": "bold underline" } }
-      ]
+        { "scope": ["comment", "comment.line", "comment.block"], "settings": { "foreground": "#7CFF6B", "fontStyle": "italic" } },
+        { "scope": ["keyword", "keyword.control.go"], "settings": { "foreground": "#6BFFB8", "fontStyle": "bold" } },
+        { "scope": ["entity.name.function", "entity.name.function.go"], "settings": { "foreground": "#FFD700", "fontStyle": "italic" } },
+        { "scope": ["variable", "variable.other.go"], "settings": { "foreground": "#FFF7F0" } },
+        { "scope": ["string", "string.quoted.double.go", "string.quoted.single.go"], "settings": { "foreground": "#6BFFB8" } },
+        { "scope": ["constant.numeric", "constant.numeric.go"], "settings": { "foreground": "#FFD700" } },
+        { "scope": ["storage.type", "storage.type.go"], "settings": { "foreground": "#6BFFB8", "fontStyle": "bold" } },
+        { "scope": ["entity.name.namespace.go"], "settings": { "foreground": "#6BFFB8", "fontStyle": "bold" } },
+        { "scope": ["entity.name.import.go", "variable.other.package.go"], "settings": { "foreground": "#7CFF6B", "fontStyle": "bold" } },
+        { "scope": ["entity.name.import.path.go"], "settings": { "foreground": "#FFD700", "fontStyle": "bold underline" } },
+        { "scope": ["source.go"], "settings": { "foreground": "#FFF7F0" } }
+      ],
+      "colors": {
+        "editor.background": "#0d1117",
+        "editor.foreground": "#FFF7F0",
+        "editorCursor.foreground": "#FFD700",
+        "editor.lineHighlightBackground": "#161b22",
+        "editor.selectionBackground": "#264f78",
+        "editor.selectionHighlightBackground": "#3b3b3b60",
+        "editorIndentGuide.background1": "#21262d",
+        "editorIndentGuide.activeBackground1": "#FFD700",
+        "editorLineNumber.foreground": "#7CFF6B",
+        "editorLineNumber.activeForeground": "#FFD700",
+        "activityBar.background": "#161b22",
+        "activityBar.foreground": "#FFF7F0",
+        "activityBar.activeBorder": "#6BFFB8",
+        "activityBar.inactiveForeground": "#6e7681",
+        "activityBarBadge.background": "#6BFFB8",
+        "activityBarBadge.foreground": "#161b22",
+        "sideBar.background": "#161b22",
+        "sideBar.foreground": "#FFF7F0",
+        "sideBarSectionHeader.background": "#21262d",
+        "sideBarSectionHeader.foreground": "#6BFFB8",
+        "statusBar.background": "#161b22",
+        "statusBar.foreground": "#FFF7F0",
+        "statusBar.noFolderBackground": "#161b22",
+        "statusBar.debuggingBackground": "#FFD700",
+        "statusBar.debuggingForeground": "#161b22",
+        "titleBar.activeBackground": "#161b22",
+        "titleBar.activeForeground": "#FFF7F0",
+        "titleBar.inactiveBackground": "#0d1117",
+        "titleBar.inactiveForeground": "#6e7681",
+        "tab.activeBackground": "#21262d",
+        "tab.activeForeground": "#6BFFB8",
+        "tab.inactiveBackground": "#161b22",
+        "tab.inactiveForeground": "#7CFF6B",
+        "tab.border": "#21262d",
+        "tab.activeBorder": "#6BFFB8",
+        "tab.unfocusedActiveBorder": "#FFD70099",
+        "panel.background": "#161b22",
+        "panel.border": "#6BFFB8",
+        "editorGroupHeader.tabsBackground": "#161b22"
+      }
     }

@@ -2,57 +2,57 @@
       "name": "Dragon Ball Trunks",
       "type": "dark",
       "tokenColors": [
-        { "scope": ["keyword"], "settings": { "foreground": "#B19CD9", "fontStyle": "bold" } }, // Lavender
-        { "scope": ["entity.name.function"], "settings": { "foreground": "#7FFFD4", "fontStyle": "italic" } }, // Aquamarine (sword)
-        { "scope": ["variable"], "settings": { "foreground": "#E8D8FF" } }, // Pale lavender
-        { "scope": ["string"], "settings": { "foreground": "#B19CD9" } }, // Lavender
-        { "scope": ["comment"], "settings": { "foreground": "#8C7CA0", "fontStyle": "italic" } }, // Muted lavender
-        { "scope": ["constant.numeric"], "settings": { "foreground": "#7FFFD4" } }, // Aquamarine
-        { "scope": ["storage.type"], "settings": { "foreground": "#B19CD9", "fontStyle": "bold" } }, // Lavender
-        { "scope": ["entity.name.namespace.go"], "settings": { "foreground": "#7FFFD4", "fontStyle": "bold" } }, // Aquamarine
-        { "scope": ["entity.name.import.go"], "settings": { "foreground": "#B19CD9", "fontStyle": "bold" } }, // Lavender
-        { "scope": ["variable.other.package.go"], "settings": { "foreground": "#B19CD9", "fontStyle": "bold" } },
-        { "scope": ["entity.name.import.path.go"], "settings": { "foreground": "#7FFFD4", "fontStyle": "bold underline" } } // Aquamarine, underlined
+        { "scope": ["comment", "comment.line", "comment.block"], "settings": { "foreground": "#A084CA", "fontStyle": "italic" } },
+        { "scope": ["keyword", "keyword.control.go"], "settings": { "foreground": "#6BC7FF", "fontStyle": "bold" } },
+        { "scope": ["entity.name.function", "entity.name.function.go"], "settings": { "foreground": "#FFD700", "fontStyle": "italic" } },
+        { "scope": ["variable", "variable.other.go"], "settings": { "foreground": "#FFF7F0" } },
+        { "scope": ["string", "string.quoted.double.go", "string.quoted.single.go"], "settings": { "foreground": "#6BC7FF" } },
+        { "scope": ["constant.numeric", "constant.numeric.go"], "settings": { "foreground": "#FFD700" } },
+        { "scope": ["storage.type", "storage.type.go"], "settings": { "foreground": "#6BC7FF", "fontStyle": "bold" } },
+        { "scope": ["entity.name.namespace.go"], "settings": { "foreground": "#6BC7FF", "fontStyle": "bold" } },
+        { "scope": ["entity.name.import.go", "variable.other.package.go"], "settings": { "foreground": "#A084CA", "fontStyle": "bold" } },
+        { "scope": ["entity.name.import.path.go"], "settings": { "foreground": "#FFD700", "fontStyle": "bold underline" } },
+        { "scope": ["source.go"], "settings": { "foreground": "#FFF7F0" } }
       ],
       "colors": {
-        "activityBar.background": "#B19CD9",
-        "activityBar.foreground": "#E8D8FF",
-        "activityBar.activeBorder": "#7FFFD4",
-        "activityBar.inactiveForeground": "#E8D8FF99",
-        "activityBarBadge.background": "#7FFFD4",
-        "activityBarBadge.foreground": "#1E1B30",
-"editor.background": "#1E1B30", // Deep lavender (hair)
-        "editor.foreground": "#E8D8FF", // Pale lavender (aura)
-        "editorCursor.foreground": "#B19CD9", // Lavender (energy)
-        "editor.lineHighlightBackground": "#2E2B40", // Slightly lighter lavender
-        "editor.selectionBackground": "#B19CD955", // Lavender, semi-transparent
-        "editor.selectionHighlightBackground": "#B19CD933", // Lighter lavender
-        "editorIndentGuide.background1": "#2E2B40",
-        "editorIndentGuide.activeBackground1": "#B19CD9", // Lavender
-        "editorLineNumber.foreground": "#8C7CA0", // Muted lavender
-        "editorLineNumber.activeForeground": "#B19CD9", // Lavender      
-        "sideBar.background": "#2E2B40",
-        "sideBar.foreground": "#E8D8FF",
-        "sideBarSectionHeader.background": "#B19CD933",
-        "sideBarSectionHeader.foreground": "#7FFFD4",
-        "statusBar.background": "#B19CD9",
-        "statusBar.foreground": "#1E1B30",
-        "statusBar.noFolderBackground": "#2E2B40",
-        "statusBar.debuggingBackground": "#7FFFD4",
-        "statusBar.debuggingForeground": "#1E1B30",
-        "titleBar.activeBackground": "#B19CD9",
-        "titleBar.activeForeground": "#E8D8FF",
-        "titleBar.inactiveBackground": "#2E2B40",
-        "titleBar.inactiveForeground": "#E8D8FF99",
-        "tab.activeBackground": "#B19CD9",
-        "tab.activeForeground": "#7FFFD4",
-        "tab.inactiveBackground": "#2E2B40",
-        "tab.inactiveForeground": "#E8D8FF99",
-        "tab.border": "#7FFFD4",
-        "tab.activeBorder": "#7FFFD4",
-        "tab.unfocusedActiveBorder": "#7FFFD499",
-        "panel.background": "#2E2B40",
-        "panel.border": "#7FFFD4",
-        "editorGroupHeader.tabsBackground": "#2E2B40"
+        "editor.background": "#0d1117",
+        "editor.foreground": "#FFF7F0",
+        "editorCursor.foreground": "#FFD700",
+        "editor.lineHighlightBackground": "#161b22",
+        "editor.selectionBackground": "#264f78",
+        "editor.selectionHighlightBackground": "#3b3b3b60",
+        "editorIndentGuide.background1": "#21262d",
+        "editorIndentGuide.activeBackground1": "#FFD700",
+        "editorLineNumber.foreground": "#A084CA",
+        "editorLineNumber.activeForeground": "#FFD700",
+        "activityBar.background": "#161b22",
+        "activityBar.foreground": "#FFF7F0",
+        "activityBar.activeBorder": "#6BC7FF",
+        "activityBar.inactiveForeground": "#6e7681",
+        "activityBarBadge.background": "#6BC7FF",
+        "activityBarBadge.foreground": "#161b22",
+        "sideBar.background": "#161b22",
+        "sideBar.foreground": "#FFF7F0",
+        "sideBarSectionHeader.background": "#21262d",
+        "sideBarSectionHeader.foreground": "#6BC7FF",
+        "statusBar.background": "#161b22",
+        "statusBar.foreground": "#FFF7F0",
+        "statusBar.noFolderBackground": "#161b22",
+        "statusBar.debuggingBackground": "#FFD700",
+        "statusBar.debuggingForeground": "#161b22",
+        "titleBar.activeBackground": "#161b22",
+        "titleBar.activeForeground": "#FFF7F0",
+        "titleBar.inactiveBackground": "#0d1117",
+        "titleBar.inactiveForeground": "#6e7681",
+        "tab.activeBackground": "#21262d",
+        "tab.activeForeground": "#6BC7FF",
+        "tab.inactiveBackground": "#161b22",
+        "tab.inactiveForeground": "#A084CA",
+        "tab.border": "#21262d",
+        "tab.activeBorder": "#6BC7FF",
+        "tab.unfocusedActiveBorder": "#FFD70099",
+        "panel.background": "#161b22",
+        "panel.border": "#6BC7FF",
+        "editorGroupHeader.tabsBackground": "#161b22"
       }
     }
