@@ -1,0 +1,94 @@
+{
+  "name": "vscode-theme-dragonball",
+  "displayName": "Vscode Theme based on Dragon Ball",
+  "description": "A Visual Studio Code theme inspired by Dragon Ball anime.",
+  "version": "1.0.0",
+  "publisher": "kyrone",
+  "license": "MIT",
+  "icon": "images/logo.png",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Dragon Ball Goku",
+        "uiTheme": "vs-dark",
+        "path": "./themes/goku-color-theme.json"
+      },
+      {
+        "label": "Dragon Ball Vegeta",
+        "uiTheme": "vs-dark",
+        "path": "./themes/vegeta-color-theme.json"
+      },
+      {
+        "label": "Dragon Ball Frieza",
+        "uiTheme": "vs-dark",
+        "path": "./themes/frieza-color-theme.json"
+      },
+      {
+        "label": "Dragon Ball Piccolo",
+        "uiTheme": "vs-dark",
+        "path": "./themes/piccolo-color-theme.json"
+      },
+      {
+        "label": "Dragon Ball Gohan",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gohan-color-theme.json"
+      },
+      {
+        "label": "Dragon Ball Super Saiyan Blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/super-saiyan-blue-color-theme.json"
+      },
+      {
+        "label": "Dragon Ball Trunks",
+        "uiTheme": "vs-dark",
+        "path": "./themes/trunks-color-theme.json"
+      },
+      {
+        "label": "Dragon Ball",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dragon-ball-color-theme.json"
+      },
+      {
+        "label": "Dragon Ball Beerus",
+        "uiTheme": "vs-dark",
+        "path": "./themes/beerus-color-theme.json"
+      },
+      {
+        "label": "Dragon Ball Broly",
+        "uiTheme": "vs-dark",
+        "path": "./themes/broly-color-theme.json"
+      },
+      {
+        "label": "Dragon Ball Android 18",
+        "uiTheme": "vs-dark",
+        "path": "./themes/android-18-color-theme.json"
+      },
+      {
+        "label": "Dragon Ball Cell",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cell-color-theme.json"
+      },
+      {
+        "label": "Dragon Ball Majin Buu",
+        "uiTheme": "vs-dark",
+        "path": "./themes/majin-buu-color-theme.json"
+      },
+      {
+        "label": "Dragon Ball Jiren",
+        "uiTheme": "vs-dark",
+        "path": "./themes/jiren-color-theme.json"
+      },
+      {
+        "label": "Dragon Ball Super Saiyan 4",
+        "uiTheme": "vs-dark",
+        "path": "./themes/super-saiyan-4-color-theme.json"
+      }
+    ]
+  }
+}
