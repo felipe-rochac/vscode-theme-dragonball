@@ -49,10 +49,10 @@ This will generate a `.vsix` file you can install or share.
 3. Choose your `.vsix` file
 
 ## Repository
-[GitHub Repository](https://github.com/yourusername/vscode-dragonball-theme)
+[GitHub Repository](https://github.com/felipe-rochac/vscode-theme-dragonball)
 
 ## Credits
-Inspired by Dragon Ball, created by Akira Toriyama. Theme design and code by frochacorrea.
+Inspired by Dragon Ball, created by Akira Toriyama. Theme design and code by Felipe Rocha Correa.
 
 ---
 Enjoy powering up your coding with Dragon Ball energy!
