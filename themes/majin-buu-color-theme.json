@@ -53,6 +53,7 @@
     { "scope": ["storage.type", "storage.type.go"], "settings": { "foreground": "#F7768E", "fontStyle": "bold" } },
     { "scope": ["entity.name.import.go", "variable.other.package.go"], "settings": { "foreground": "#A06B8C", "fontStyle": "bold" } },
     { "scope": ["entity.name.import.path.go"], "settings": { "foreground": "#FFD700", "fontStyle": "bold underline" } },
+    { "scope": ["entity.name.type", "entity.name.type.go"], "settings": { "foreground": "#FFD700", "fontStyle": "bold" } },
     { "scope": ["source.go"], "settings": { "foreground": "#FFE0F7" } }
   ]
 }

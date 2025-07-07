@@ -52,6 +52,7 @@
         { "scope": ["string", "string.quoted.double.go", "string.quoted.single.go"], "settings": { "foreground": "#3B4D9B" } },
         { "scope": ["constant.numeric", "constant.numeric.go"], "settings": { "foreground": "#FFD700" } },
         { "scope": ["storage.type", "storage.type.go"], "settings": { "foreground": "#1976D2", "fontStyle": "bold" } },
+        { "scope": ["entity.name.type", "entity.name.type.go"], "settings": { "foreground": "#A084CA", "fontStyle": "bold" } },
         // Go imports and packages (TextMate fallback)
         { "scope": ["entity.name.import.go", "variable.other.package.go"], "settings": { "foreground": "#6B7CA0", "fontStyle": "bold" } },
         { "scope": ["entity.name.import.path.go"], "settings": { "foreground": "#FFD700", "fontStyle": "bold underline" } },

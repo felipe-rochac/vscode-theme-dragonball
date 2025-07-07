@@ -12,6 +12,7 @@
         { "scope": ["entity.name.namespace.go"], "settings": { "foreground": "#6BC7FF", "fontStyle": "bold" } },
         { "scope": ["entity.name.import.go", "variable.other.package.go"], "settings": { "foreground": "#6BC7FF", "fontStyle": "bold" } },
         { "scope": ["entity.name.import.path.go"], "settings": { "foreground": "#FFD700", "fontStyle": "bold underline" } },
+        { "scope": ["entity.name.type", "entity.name.type.go"], "settings": { "foreground": "#6BC7FF", "fontStyle": "bold" } },
         { "scope": ["source.go"], "settings": { "foreground": "#FFF7F0" } }
       ],
       "colors": {

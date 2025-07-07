@@ -75,6 +75,7 @@
         { "scope": ["constant.language.null.json", "constant.language.null.js", "constant.language.null.ts", "constant.language.null.tsx"], "settings": { "foreground": "#A67C52", "fontStyle": "italic" } },
         { "scope": ["comment.line.double-slash.js", "comment.line.double-slash.ts", "comment.line.double-slash.tsx", "comment.block.documentation.js", "comment.block.documentation.ts", "comment.block.documentation.tsx"], "settings": { "foreground": "#A67C52", "fontStyle": "italic" } },
         { "scope": ["punctuation.separator.key-value.json", "punctuation.separator.key-value.js", "punctuation.separator.key-value.ts", "punctuation.separator.key-value.tsx"], "settings": { "foreground": "#F47C2C" } },
-        { "scope": ["punctuation.definition.block.js", "punctuation.definition.block.ts", "punctuation.definition.block.tsx"], "settings": { "foreground": "#FFD700" } }
+        { "scope": ["punctuation.definition.block.js", "punctuation.definition.block.ts", "punctuation.definition.block.tsx"], "settings": { "foreground": "#FFD700" } },
+        { "scope": ["entity.name.type", "entity.name.type.go"], "settings": { "foreground": "#FFD700", "fontStyle": "bold" } }
       ]
     }
