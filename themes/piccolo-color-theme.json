@@ -2,7 +2,6 @@
   "name": "Dragon Ball Piccolo",
   "type": "dark",
   "colors": {
-    // GitHub Dark base colors
     "editor.background": "#0d1117",
     "editor.foreground": "#c9d1d9",
     "editorCursor.foreground": "#58a6ff",
@@ -44,13 +43,14 @@
     "editorGroupHeader.tabsBackground": "#161b22"
   },
   "tokenColors": [
-    // GitHub Dark base for general code
+    // Base for general code
     { "scope": ["comment", "comment.line", "comment.block"], "settings": { "foreground": "#8b949e", "fontStyle": "italic" } },
     { "scope": ["keyword", "keyword.control.go"], "settings": { "foreground": "#7FFF00", "fontStyle": "bold" } }, // Piccolo green
+    { "scope": ["entity.name.type.go"], "settings": { "foreground": "#A98BFF" } },
     { "scope": ["entity.name.function", "entity.name.function.go"], "settings": { "foreground": "#a98bff", "fontStyle": "italic" } }, // Piccolo purple
-    { "scope": ["variable", "variable.other.go"], "settings": { "foreground": "#A98BFF" } },
+    { "scope": ["variable", "variable.other.go"], "settings": { "foreground": "#ffffff" } },
     { "scope": ["string", "string.quoted.double.go", "string.quoted.single.go"], "settings": { "foreground": "#a5d6ff" } },
-    { "scope": ["constant.numeric", "constant.numeric.go"], "settings": { "foreground": "#79c0ff" } },
+    { "scope": ["constant.numeric", "constant.numeric.go"], "settings": { "foreground": "#ffffff" } },
     { "scope": ["storage.type", "storage.type.go"], "settings": { "foreground": "#7FFF00", "fontStyle": "bold" } },
     // Go imports and packages (TextMate fallback)
     { "scope": ["entity.name.import.go", "variable.other.package.go"], "settings": { "foreground": "#a98bff", "fontStyle": "bold" } },
@@ -75,7 +75,28 @@
     { "scope": ["constant.language.null.json", "constant.language.null.js", "constant.language.null.ts", "constant.language.null.tsx"], "settings": { "foreground": "#8b949e", "fontStyle": "italic" } },
     { "scope": ["comment.line.double-slash.js", "comment.line.double-slash.ts", "comment.line.double-slash.tsx", "comment.block.documentation.js", "comment.block.documentation.ts", "comment.block.documentation.tsx"], "settings": { "foreground": "#8b949e", "fontStyle": "italic" } },
     { "scope": ["punctuation.separator.key-value.json", "punctuation.separator.key-value.js", "punctuation.separator.key-value.ts", "punctuation.separator.key-value.tsx"], "settings": { "foreground": "#7FFF00" } },
-    { "scope": ["punctuation.definition.block.js", "punctuation.definition.block.ts", "punctuation.definition.block.tsx"], "settings": { "foreground": "#a98bff" } }
+    { "scope": ["punctuation.definition.block.js", "punctuation.definition.block.ts", "punctuation.definition.block.tsx"], "settings": { "foreground": "#a98bff" } },
+    // Makefile
+    { "scope": ["keyword.control.makefile"], "settings": { "foreground": "#7CFF6B", "fontStyle": "bold" } },
+    { "scope": ["variable.assignment.makefile"], "settings": { "foreground": "#7CFF6B", "fontStyle": "bold" } },
+    { "scope": ["entity.name.function.target.makefile"], "settings": { "foreground": "#7CFF6B", "fontStyle": "bold underline" } },
+    { "scope": ["meta.scope.target.makefile"], "settings": { "foreground": "#7CFF6B", "fontStyle": "bold" } },
+    { "scope": ["meta.scope.prerequisites.makefile"], "settings": { "foreground": "#7CFF6B", "fontStyle": "" } },
+    { "scope": ["support.constant.makefile"], "settings": { "foreground": "#FFD700", "fontStyle": "bold" } },
+    { "scope": ["string.quoted.double.makefile", "string.quoted.single.makefile"], "settings": { "foreground": "#A084CA" } },
+    { "scope": ["comment.line.number-sign.makefile"], "settings": { "foreground": "#A084CA", "fontStyle": "italic" } },
+    // Terraform
+    { "scope": ["keyword.control.terraform"], "settings": { "foreground": "#7FFF00", "fontStyle": "bold" } },
+    { "scope": ["variable.other.terraform"], "settings": { "foreground": "#ffffff" } },
+    { "scope": ["entity.name.function.terraform"], "settings": { "foreground": "#a98bff", "fontStyle": "italic" } },
+    { "scope": ["entity.name.type.terraform"], "settings": { "foreground": "#A98BFF", "fontStyle": "bold" } },
+    { "scope": ["string.quoted.double.terraform", "string.quoted.single.terraform"], "settings": { "foreground": "#a5d6ff" } },
+    { "scope": ["constant.numeric.terraform"], "settings": { "foreground": "#79c0ff" } },
+    { "scope": ["constant.language.boolean.terraform"], "settings": { "foreground": "#7FFF00", "fontStyle": "bold" } },
+    { "scope": ["comment.line.number-sign.terraform"], "settings": { "foreground": "#8b949e", "fontStyle": "italic" } },
+    { "scope": ["support.constant.terraform"], "settings": { "foreground": "#FFD700", "fontStyle": "bold" } },
+    { "scope": ["punctuation.definition.block.terraform"], "settings": { "foreground": "#a98bff" } },
+    { "scope": ["support.function.builtin.terraform"], "settings": { "foreground": "#a98bff", "fontStyle": "bold italic" } }
   ]
 }
 

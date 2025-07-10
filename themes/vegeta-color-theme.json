@@ -2,7 +2,6 @@
       "name": "Dragon Ball Vegeta",
       "type": "dark",
       "colors": {
-        // GitHub Dark base colors
         "editor.background": "#0d1117",
         "editor.foreground": "#E0E6F8",
         "editorCursor.foreground": "#1976D2",
@@ -44,7 +43,7 @@
         "editorGroupHeader.tabsBackground": "#161b22"
       },
       "tokenColors": [
-        // GitHub Dark base for general code
+        // Base for general code
         { "scope": ["comment", "comment.line", "comment.block"], "settings": { "foreground": "#6B7CA0", "fontStyle": "italic" } },
         { "scope": ["keyword", "keyword.control.go"], "settings": { "foreground": "#1976D2", "fontStyle": "bold" } },
         { "scope": ["entity.name.function", "entity.name.function.go"], "settings": { "foreground": "#FFD700", "fontStyle": "italic" } },
@@ -76,6 +75,26 @@
         { "scope": ["constant.language.null.json", "constant.language.null.js", "constant.language.null.ts", "constant.language.null.tsx"], "settings": { "foreground": "#6B7CA0", "fontStyle": "italic" } },
         { "scope": ["comment.line.double-slash.js", "comment.line.double-slash.ts", "comment.line.double-slash.tsx", "comment.block.documentation.js", "comment.block.documentation.ts", "comment.block.documentation.tsx"], "settings": { "foreground": "#6B7CA0", "fontStyle": "italic" } },
         { "scope": ["punctuation.separator.key-value.json", "punctuation.separator.key-value.js", "punctuation.separator.key-value.ts", "punctuation.separator.key-value.tsx"], "settings": { "foreground": "#1976D2" } },
-        { "scope": ["punctuation.definition.block.js", "punctuation.definition.block.ts", "punctuation.definition.block.tsx"], "settings": { "foreground": "#FFD700" } }
+        { "scope": ["punctuation.definition.block.js", "punctuation.definition.block.ts", "punctuation.definition.block.tsx"], "settings": { "foreground": "#FFD700" } },
+        // Makefile
+        { "scope": ["keyword.control.makefile"], "settings": { "foreground": "#FFD700", "fontStyle": "bold" } },
+        { "scope": ["variable.assignment.makefile"], "settings": { "foreground": "#1976D2", "fontStyle": "bold" } },
+        { "scope": ["entity.name.function.target.makefile"], "settings": { "foreground": "#A084CA", "fontStyle": "bold underline" } },
+        { "scope": ["string.quoted.double.makefile", "string.quoted.single.makefile"], "settings": { "foreground": "#3B4D9B" } },
+        { "scope": ["comment.line.number-sign.makefile"], "settings": { "foreground": "#6B7CA0", "fontStyle": "italic" } },
+        { "scope": ["meta.scope.target.makefile"], "settings": { "foreground": "#A084CA", "fontStyle": "bold" } },
+        { "scope": ["meta.scope.prerequisites.makefile"], "settings": { "foreground": "#A084CA", "fontStyle": "" } },
+        // Terraform
+        { "scope": ["keyword.control.terraform"], "settings": { "foreground": "#1976D2", "fontStyle": "bold" } },
+        { "scope": ["variable.other.terraform"], "settings": { "foreground": "#E0E6F8" } },
+        { "scope": ["entity.name.function.terraform"], "settings": { "foreground": "#A084CA", "fontStyle": "italic" } },
+        { "scope": ["entity.name.type.terraform"], "settings": { "foreground": "#A084CA", "fontStyle": "bold" } },
+        { "scope": ["string.quoted.double.terraform", "string.quoted.single.terraform"], "settings": { "foreground": "#3B4D9B" } },
+        { "scope": ["constant.numeric.terraform"], "settings": { "foreground": "#FFD700" } },
+        { "scope": ["constant.language.boolean.terraform"], "settings": { "foreground": "#1976D2", "fontStyle": "bold" } },
+        { "scope": ["comment.line.number-sign.terraform"], "settings": { "foreground": "#8b949e", "fontStyle": "italic" } },
+        { "scope": ["support.constant.terraform"], "settings": { "foreground": "#FFD700", "fontStyle": "bold" } },
+        { "scope": ["punctuation.definition.block.terraform"], "settings": { "foreground": "#A084CA" } },
+        { "scope": ["support.function.builtin.terraform"], "settings": { "foreground": "#A084CA", "fontStyle": "bold italic" } }
       ]
     }

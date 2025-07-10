@@ -2,7 +2,7 @@
   "name": "vscode-theme-dragonball",
   "displayName": "Vscode Theme based on Dragon Ball",
   "description": "A Visual Studio Code theme inspired by Dragon Ball anime.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "kyrone",
   "license": "MIT",
   "icon": "images/logo.png",
