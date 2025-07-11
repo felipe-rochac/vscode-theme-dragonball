@@ -57,4 +57,10 @@ Inspired by Dragon Ball, created by Akira Toriyama. Theme design and code by Fel
 ---
 Enjoy powering up your coding with Dragon Ball energy!
 
+## 💖 Support My Work
 
+Developing and maintaining this VS Code extension takes time and effort. If you find it useful and would like to support its continued development, please consider making a small donation. Your generosity helps immensely!
+
+[![Donate with PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?business=BJ8V7HA6L9KRG&no_recurring=0&item_name=Developing+and+maintaining+extensions+takes+time+and+effort%2C+please+consider+supporting+development+through+a+small+donation.&currency_code=CAD)
+
+Alternatively, you can click here to [Donate directly via PayPal](https://www.paypal.com/donate/?business=BJ8V7HA6L9KRG&no_recurring=0&item_name=Developing+and+maintaining+extensions+takes+time+and+effort%2C+please+consider+supporting+development+through+a+small+donation.&currency_code=CAD)

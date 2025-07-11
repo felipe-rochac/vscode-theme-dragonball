@@ -88,7 +88,7 @@
     // Terraform
     { "scope": ["keyword.control.terraform"], "settings": { "foreground": "#7FFF00", "fontStyle": "bold" } },
     { "scope": ["variable.other.terraform"], "settings": { "foreground": "#ffffff" } },
-    { "scope": ["entity.name.function.terraform"], "settings": { "foreground": "#a98bff", "fontStyle": "italic" } },
+    { "scope": ["entity.name.function.terraform", "variable.other.readwrite.terraform"], "settings": { "foreground": "#a98bff", "fontStyle": "italic" } },
     { "scope": ["entity.name.type.terraform"], "settings": { "foreground": "#A98BFF", "fontStyle": "bold" } },
     { "scope": ["string.quoted.double.terraform", "string.quoted.single.terraform"], "settings": { "foreground": "#a5d6ff" } },
     { "scope": ["constant.numeric.terraform"], "settings": { "foreground": "#79c0ff" } },

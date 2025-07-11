@@ -92,6 +92,7 @@
         { "scope": ["comment.line.number-sign.terraform"], "settings": { "foreground": "#8b949e", "fontStyle": "italic" } },
         { "scope": ["support.constant.terraform"], "settings": { "foreground": "#FFD700", "fontStyle": "bold" } },
         { "scope": ["punctuation.definition.block.terraform"], "settings": { "foreground": "#FFD700" } },
-        { "scope": ["support.function.builtin.terraform"], "settings": { "foreground": "#DDA0DD", "fontStyle": "bold italic" } }
+        { "scope": ["support.function.builtin.terraform"], "settings": { "foreground": "#DDA0DD", "fontStyle": "bold italic" } },
+        { "scope": ["variable.other.readwrite.terraform"], "settings": { "foreground": "#DDA0DD", "fontStyle": "italic" } }
       ]
     }
