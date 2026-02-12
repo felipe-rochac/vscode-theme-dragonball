@@ -1,39 +1,86 @@
 # Dragon Ball VS Code Themes
 
-A collection of dark, character-accurate Visual Studio Code themes inspired by Dragon Ball! Each theme is carefully crafted to match the palette and spirit of a specific character, with advanced syntax highlighting (including Go/golang), Dracula-style UI coverage, and unique touches for each hero and villain.
+A collection of professional, high-contrast Visual Studio Code themes inspired by Dragon Ball! Each theme features **One Dark-style rich syntax highlighting** with 50+ scope rules, character-specific accent colors, and excellent readability for modern development.
+
+## ✨ New: Enhanced Color Palettes
+
+All themes have been upgraded with:
+- **Rich syntax highlighting** (50+ language scopes)
+- **Professional contrast** inspired by One Dark theme
+- **Multiple color tiers** for better code differentiation
+- **Expanded language support** (Go, TypeScript, Python, Terraform, YAML, JSON, Makefile, and more)
+- **Special highlighting** for operators, parameters, decorators, and annotations
+- **Zed editor compatible** (see [ZED_THEMES.md](ZED_THEMES.md))
 
 ## Included Themes
-- Goku
-- Vegeta
-- Gohan
-- Frieza
-- Majin Buu
-- Broly
-- Beerus
-- Dragon Ball (classic)
-- Super Saiyan Blue
-- Trunks
-- Android 18
-- Cell
-- Piccolo
-- Jiren (ultra-dark, red/gray)
-- Super Saiyan 4 (deep red, gold, brown)
+
+Each theme maintains its character-specific personality while providing professional-grade syntax highlighting:
+
+- **Piccolo** - Green (#7FFF00) + Purple (#a98bff)
+- **Vegeta** - Royal Blue (#1976D2) + Gold (#FFD700)
+- **Goku** - Orange (#F47C2C) + Gold (#FFD700)
+- **Trunks** - Cyan (#6BC7FF) + Purple (#A084CA)
+- **Frieza** - Plum (#DDA0DD) + Pink (#FF6FD8)
+- **Gohan** - Purple (#A084CA) + Gold (#FFD700)
+- **Majin Buu** - Pink (#F7768E) + Gold (#FFD700)
+- **Broly** - Mint Green (#6BFFB8) + Light Green (#7CFF6B)
+- **Beerus** - Purple (#A084CA) + Gold (#FFD700)
+- **Android 18** - Cyan (#6BC7FF) + Purple (#A084CA)
+- **Cell** - Chartreuse (#7FFF00) + Lime (#32CD32)
+- **Jiren** - Red (#FF2D2D) + Gray (#7C7C8C)
+- **Super Saiyan Blue** - Sky Blue (#00BFFF) + Cyan (#00FFFF)
+- **Super Saiyan 4** - Red (#FF4B4B) + Gold (#FFD700)
+- **Dragon Ball** - Orange (#FF9800) + Blue (#1976D2)
 
 ## Features
-- **Character-accurate palettes**: Each theme uses colors inspired by the character's design.
-- **Dracula-style UI coverage**: Activity bar, status bar, side bar, title bar, tabs, panels, and more.
-- **Advanced Go (golang) syntax highlighting**:
-  - `entity.name.import.go`: Imported package name
-  - `variable.other.package.go`: Package references in code (e.g., `uuid` in `uuid.New()`), bold and colored
-  - `entity.name.import.path.go`: Last part of import path (e.g., `uuid` in `github.com/google/uuid`), bold, colored, and underlined
-- **Consistent, modern look**: All themes are visually balanced and easy on the eyes.
-- **Ultra-dark options**: Piccolo, Cell, Jiren, and Super Saiyan 4 are especially suited for dark environments.
+
+### Comprehensive Syntax Highlighting
+- **Comments**: Subtle gray with italic styling
+- **Keywords**: Bold, character-specific accent color
+- **Functions**: Italic, tertiary accent color
+- **Types & Classes**: Bold, secondary accent color
+- **Variables**: Clear white/light gray
+- **Parameters**: Distinct orange highlighting
+- **Strings**: Soft blue for readability
+- **Numbers & Constants**: Bold, accent-colored
+- **Operators**: Character-specific primary color
+- **Decorators**: Italic, accent-colored
+
+### Language Support
+- **Go (golang)**: Advanced TextMate scopes including imports, packages, types, and more
+- **JavaScript/TypeScript**: Full JSX/TSX support with detailed property highlighting
+- **Python**: Decorators, magic methods, type hints
+- **YAML**: Tags, anchors, aliases, and values
+- **JSON**: Keys, values, and schema support
+- **Terraform**: Resources, variables, functions, and blocks
+- **Makefile**: Targets, prerequisites, variables
+- **And many more languages...**
+
+### GitHub Dark-Inspired UI
+- Activity bar with character-specific accents
+- Clean status bar and sidebar
+- Distinct tab highlighting
+- Professional panel borders
+- Optimized for dark environments
+
 
 ## Installation
-1. Clone or download this repository.
-2. Open the folder in VS Code.
-3. Press `F5` to launch the Extension Development Host.
-4. Use `Ctrl+K Ctrl+T` to switch between the Dragon Ball themes.
+
+### From Marketplace (Recommended)
+1. Open VS Code
+2. Go to Extensions (`Ctrl+Shift+X`)
+3. Search for "Dragon Ball Themes"
+4. Click Install
+5. Use `Ctrl+K Ctrl+T` to select your favorite Dragon Ball theme
+
+### From Source
+1. Clone or download this repository
+2. Open the folder in VS Code
+3. Press `F5` to launch the Extension Development Host
+4. Use `Ctrl+K Ctrl+T` to switch between themes
+
+### For Zed Editor
+See [ZED_THEMES.md](ZED_THEMES.md) for instructions on using these themes in Zed editor.
 
 ## Packaging & Distribution
 To package the theme for distribution:
@@ -47,6 +94,36 @@ This will generate a `.vsix` file you can install or share.
 1. Open VS Code
 2. Press `Ctrl+Shift+P` and select `Extensions: Install from VSIX...`
 3. Choose your `.vsix` file
+
+## Recommended Settings
+
+For the best experience with these themes:
+
+```json
+{
+  "editor.fontFamily": "'Fira Code', 'JetBrains Mono', 'Cascadia Code', monospace",
+  "editor.fontLigatures": true,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.bracketPairColorization.enabled": true
+}
+```
+
+## Screenshots
+
+Each theme provides:
+- ✅ Professional contrast and readability
+- ✅ Character-specific accent colors
+- ✅ Rich syntax highlighting for 20+ languages
+- ✅ Consistent UI design across all themes
+
+## Changelog
+
+### v2.0.0 - Enhanced Color Palettes
+- Added One Dark-style rich syntax highlighting
+- Expanded to 50+ syntax scopes
+- Improved contrast and readability
+- Added Zed editor compatibility
+- Enhanced language support (Terraform, YAML, Makefile, etc.)
 
 ## Repository
 [GitHub Repository](https://github.com/felipe-rochac/vscode-theme-dragonball)

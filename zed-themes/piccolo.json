@@ -1,0 +1,215 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
+  "name": "Dragon Ball Piccolo",
+  "author": "Dragon Ball Theme",
+  "themes": [
+    {
+      "name": "Dragon Ball Piccolo",
+      "appearance": "dark",
+      "style": {
+        "background": "#15201a",
+        "foreground": "#c9d1d9",
+        "cursor": "#58a6ff",
+        "selection": "#10B98140",
+        "selection.match": "#3b3b3b25",
+        "line_number": "#8b949e",
+        "line_number.active": "#c9d1d9",
+        "title_bar.background": "#18261f",
+        "toolbar.background": "#18261f",
+        "tab_bar.background": "#18261f",
+        "tab.active_background": "#263a30",
+        "tab.inactive_background": "#18261f",
+        "panel.background": "#1a2822",
+        "status_bar.background": "#18261f",
+        "editor.line_highlight_background": "#1d2e26",
+        "editor.gutter.background": "#15201a",
+        "editor.active_line_background": "#1d2e26",
+        "border": "#4ADE80",
+        "border.variant": "#1d2e26",
+        "editor.background": "#15201a",
+        "border.focused": "#10B981",
+        "text": "#c9d1d9",
+        "players": [
+          {
+            "cursor": "#58a6ff",
+            "selection": "#10B98140"
+          }
+        ],
+        "error": "#E06C75",
+        "error_background": "#E06C7520",
+        "warning": "#E5C07B",
+        "warning_background": "#E5C07B20",
+        "info": "#61AFEF",
+        "info_background": "#61AFEF20",
+        "hint": "#98C379",
+        "hint_background": "#98C37920",
+        "created": "#98C379",
+        "modified": "#E5C07B",
+        "deleted": "#E06C75",
+        "renamed": "#61AFEF",
+        "conflict": "#C678DD",
+        "search.match_background": "#4ADE8040",
+        "terminal.ansi.black": "#282C34",
+        "terminal.ansi.red": "#E06C75",
+        "terminal.ansi.green": "#98C379",
+        "terminal.ansi.yellow": "#E5C07B",
+        "terminal.ansi.blue": "#61AFEF",
+        "terminal.ansi.magenta": "#C678DD",
+        "terminal.ansi.cyan": "#56B6C2",
+        "terminal.ansi.white": "#ABB2BF",
+        "terminal.ansi.bright_black": "#5C6370",
+        "terminal.ansi.bright_red": "#E06C75",
+        "terminal.ansi.bright_green": "#98C379",
+        "terminal.ansi.bright_yellow": "#E5C07B",
+        "terminal.ansi.bright_blue": "#61AFEF",
+        "terminal.ansi.bright_magenta": "#C678DD",
+        "terminal.ansi.bright_cyan": "#56B6C2",
+        "terminal.ansi.bright_white": "#FFFFFF",
+        "syntax": {
+          "text": {
+            "color": "#A98BFF"
+          },
+          "comment": {
+            "color": "#8b949e",
+            "font_style": "italic"
+          },
+          "comment.doc": {
+            "color": "#8b949e",
+            "font_style": "italic"
+          },
+          "keyword": {
+            "color": "#7FFF00",
+            "font_weight": 700
+          },
+          "string": {
+            "color": "#a5d6ff"
+          },
+          "string.special": {
+            "color": "#a5d6ff"
+          },
+          "string.special.path": {
+            "color": "#a98bff"
+          },
+          "string.special.key": {
+            "color": "#a5d6ff"
+          },
+          "namespace": {
+            "color": "#a98bff",
+            "font_weight": 700
+          },
+          "module": {
+            "color": "#a98bff",
+            "font_weight": 700
+          },
+          "label": {
+            "color": "#a98bff",
+            "font_weight": 700
+          },
+          "link_text": {
+            "color": "#7FFF00",
+            "font_weight": 700
+          },
+          "preproc": {
+            "color": "#a98bff",
+            "font_weight": 700
+          },
+          "string.special.symbol": {
+            "color": "#a5d6ff"
+          },
+          "number": {
+            "color": "#79c0ff"
+          },
+          "primary": {
+            "color": "#79c0ff"
+          },
+          "boolean": {
+            "color": "#7FFF00",
+            "font_weight": 700
+          },
+          "primary.boolean": {
+            "color": "#7FFF00",
+            "font_weight": 700
+          },
+          "constructor": {
+            "color": "#FFD700",
+            "font_weight": 700
+          },
+          "function": {
+            "color": "#a98bff",
+            "font_style": "italic"
+          },
+          "function.method": {
+            "color": "#a98bff",
+            "font_style": "italic"
+          },
+          "function.builtin": {
+            "color": "#a98bff",
+            "font_style": "italic",
+            "font_weight": 700
+          },
+          "type": {
+            "color": "#A98BFF"
+          },
+          "type.interface": {
+            "color": "#A98BFF",
+            "font_weight": 700
+          },
+          "type.builtin": {
+            "color": "#7FFF00",
+            "font_weight": 700
+          },
+          "variable": {
+            "color": "#ffffff"
+          },
+          "variable.member": {
+            "color": "#ffffff"
+          },
+          "property": {
+            "color": "#a98bff",
+            "font_weight": 700
+          },
+          "variant": {
+            "color": "#a98bff",
+            "font_weight": 700
+          },
+          "tag": {
+            "color": "#a98bff",
+            "font_weight": 700
+          },
+          "enum": {
+            "color": "#a98bff",
+            "font_weight": 700
+          },
+          "punctuation.bracket": {
+            "color": "#a98bff"
+          },
+          "punctuation.delimiter": {
+            "color": "#7FFF00"
+          },
+          "link_uri": {
+            "color": "#7FFF00",
+            "font_weight": 700
+          },
+          "title.special": {
+            "color": "#7CFF6B",
+            "font_weight": 700
+          },
+          "hint": {
+            "color": "#7CFF6B",
+            "font_weight": 700
+          },
+          "keyword.makefile": {
+            "color": "#7CFF6B",
+            "font_weight": 700
+          },
+          "variable.special": {
+            "color": "#ffffff"
+          },
+          "punctuation.special": {
+            "color": "#7FFF00"
+          }
+        }
+      }
+    }
+  ]
+}

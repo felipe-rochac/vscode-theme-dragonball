@@ -1,8 +1,8 @@
 {
   "name": "vscode-theme-dragonball",
-  "displayName": "Vscode Theme based on Dragon Ball",
-  "description": "A Visual Studio Code theme inspired by Dragon Ball anime.",
-  "version": "1.0.2",
+  "displayName": "Dragon Ball Themes - Professional Dark Themes",
+  "description": "Professional Dragon Ball-inspired VS Code themes with One Dark-style rich syntax highlighting, 50+ scopes, and excellent readability. Zed editor compatible.",
+  "version": "2.0.0",
   "publisher": "kyrone",
   "license": "MIT",
   "icon": "images/logo.png",
@@ -13,6 +13,18 @@
   "engines": {
     "vscode": "^1.60.0"
   },
+  "keywords": [
+    "theme",
+    "dark theme",
+    "dragon ball",
+    "anime",
+    "goku",
+    "vegeta",
+    "one dark",
+    "professional",
+    "high contrast",
+    "zed"
+  ],
   "sponsor": {
     "url": "https://www.paypal.com/donate/?business=BJ8V7HA6L9KRG&no_recurring=0&item_name=Developing+and+maintaining+extensions+takes+time+and+effort%2C+please+consider+supporting+development+through+a+small+donation.&currency_code=CAD"
   },
