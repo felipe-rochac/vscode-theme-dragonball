@@ -67,14 +67,14 @@
         "terminal.ansi.bright_white": "#FFFFFF",
         "syntax": {
           "text": {
-            "color": "#A98BFF"
+            "color": "#e6edf3"
           },
           "comment": {
-            "color": "#8b949e",
+            "color": "#6a737d",
             "font_style": "italic"
           },
           "comment.doc": {
-            "color": "#8b949e",
+            "color": "#6a737d",
             "font_style": "italic"
           },
           "keyword": {
@@ -82,16 +82,22 @@
             "font_weight": 700
           },
           "string": {
-            "color": "#a5d6ff"
+            "color": "#98d3ff"
           },
           "string.special": {
-            "color": "#a5d6ff"
+            "color": "#98d3ff"
           },
           "string.special.path": {
-            "color": "#a98bff"
+            "color": "#98d3ff"
           },
           "string.special.key": {
-            "color": "#a5d6ff"
+            "color": "#98d3ff"
+          },
+          "string.escape": {
+            "color": "#56d364"
+          },
+          "string.regex": {
+            "color": "#7ee787"
           },
           "namespace": {
             "color": "#a98bff",
@@ -114,7 +120,7 @@
             "font_weight": 700
           },
           "string.special.symbol": {
-            "color": "#a5d6ff"
+            "color": "#98d3ff"
           },
           "number": {
             "color": "#79c0ff"
@@ -123,15 +129,19 @@
             "color": "#79c0ff"
           },
           "boolean": {
-            "color": "#7FFF00",
+            "color": "#79c0ff",
             "font_weight": 700
           },
           "primary.boolean": {
-            "color": "#7FFF00",
+            "color": "#79c0ff",
+            "font_weight": 700
+          },
+          "constant": {
+            "color": "#79c0ff",
             "font_weight": 700
           },
           "constructor": {
-            "color": "#FFD700",
+            "color": "#ffa657",
             "font_weight": 700
           },
           "function": {
@@ -148,10 +158,11 @@
             "font_weight": 700
           },
           "type": {
-            "color": "#A98BFF"
+            "color": "#A98BFF",
+            "font_weight": 700
           },
           "type.interface": {
-            "color": "#A98BFF",
+            "color": "#ffa657",
             "font_weight": 700
           },
           "type.builtin": {
@@ -159,17 +170,23 @@
             "font_weight": 700
           },
           "variable": {
-            "color": "#ffffff"
+            "color": "#e6edf3"
           },
           "variable.member": {
-            "color": "#ffffff"
+            "color": "#e6edf3"
+          },
+          "variable.parameter": {
+            "color": "#ffa657"
+          },
+          "variable.special": {
+            "color": "#e6edf3"
           },
           "property": {
-            "color": "#a98bff",
+            "color": "#79c0ff",
             "font_weight": 700
           },
           "variant": {
-            "color": "#a98bff",
+            "color": "#79c0ff",
             "font_weight": 700
           },
           "tag": {
@@ -180,33 +197,33 @@
             "color": "#a98bff",
             "font_weight": 700
           },
+          "operator": {
+            "color": "#7FFF00"
+          },
           "punctuation.bracket": {
-            "color": "#a98bff"
+            "color": "#c9d1d9"
           },
           "punctuation.delimiter": {
-            "color": "#7FFF00"
+            "color": "#c9d1d9"
           },
           "link_uri": {
             "color": "#7FFF00",
             "font_weight": 700
           },
           "title.special": {
-            "color": "#7CFF6B",
+            "color": "#a98bff",
             "font_weight": 700
           },
           "hint": {
-            "color": "#7CFF6B",
+            "color": "#79c0ff",
             "font_weight": 700
           },
           "keyword.makefile": {
-            "color": "#7CFF6B",
+            "color": "#7FFF00",
             "font_weight": 700
           },
-          "variable.special": {
-            "color": "#ffffff"
-          },
           "punctuation.special": {
-            "color": "#7FFF00"
+            "color": "#c9d1d9"
           }
         }
       }

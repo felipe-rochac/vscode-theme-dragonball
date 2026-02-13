@@ -72,6 +72,65 @@ def create_theme_variant(base_theme, variant_name, bg_adjustment):
     return variant
 
 
+def create_dark_variant(base_theme, variant_name, bg_level="base"):
+    """Create variant with neutral dark background (One Dark style) but keep syntax colors."""
+    import copy
+    variant = copy.deepcopy(base_theme)
+    
+    # Update the theme name
+    variant["name"] = f"{base_theme['name']} ({variant_name})"
+    variant["themes"][0]["name"] = f"{base_theme['name']} ({variant_name})"
+    
+    # Replace with neutral One Dark-style backgrounds
+    style = variant["themes"][0]["style"]
+    
+    # One Dark Pro background palette
+    dark_backgrounds = {
+        "darker": {
+            "editor": "#1a1d23",
+            "sidebar": "#1e2127", 
+            "panel": "#21252b",
+            "active": "#2c313a",
+            "highlight": "#2c313c",
+        },
+        "base": {
+            "editor": "#282c34",
+            "sidebar": "#21252b",
+            "panel": "#282c34", 
+            "active": "#2c313c",
+            "highlight": "#2c313c",
+        },
+        "lighter": {
+            "editor": "#2c313a",
+            "sidebar": "#282c34",
+            "panel": "#2c313a",
+            "active": "#3e4451",
+            "highlight": "#3e4451",
+        }
+    }
+    
+    bg = dark_backgrounds.get(bg_level, dark_backgrounds["base"])
+    
+    # Apply neutral dark backgrounds
+    style["background"] = bg["editor"]
+    style["editor.background"] = bg["editor"]
+    style["editor.gutter.background"] = bg["editor"]
+    style["toolbar.background"] = bg["sidebar"]
+    style["tab_bar.background"] = bg["sidebar"]
+    style["status_bar.background"] = bg["sidebar"]
+    style["title_bar.background"] = bg["sidebar"]
+    style["panel.background"] = bg["panel"]
+    style["tab.active_background"] = bg["active"]
+    style["tab.inactive_background"] = bg["sidebar"]
+    style["editor.line_highlight_background"] = bg["highlight"]
+    style["editor.active_line_background"] = bg["highlight"]
+    
+    # Keep character-specific borders and accents
+    # (these are already set from base theme)
+    
+    return variant
+
+
 def add_thematic_background(colors, theme_name):
     """Add character-specific thematic tint to backgrounds with improved contrast."""
     
@@ -677,9 +736,9 @@ def main():
     print(f"Converting {len(theme_files)} VS Code themes to Zed format...\n")
     
     # Ask user about background variants
-    print("Generate background variants? (default/darker/lighter/all) [default]: ", end="")
+    print("Generate background variants? (themed/dark/all) [themed]: ", end="")
     import sys
-    variant_choice = input().strip().lower() or "default"
+    variant_choice = input().strip().lower() or "themed"
     print()
     
     for theme_file in theme_files:
@@ -706,29 +765,50 @@ def main():
             # Convert to Zed format
             base_zed_theme = convert_vscode_to_zed(vscode_theme, theme_name)
             
-            # Generate base theme
+            # Generate base theme (always create)
             base_output_file = zed_themes_dir / f"{theme_file.stem.replace('-color-theme', '')}.json"
             
-            if variant_choice in ["default", "all"]:
+            if variant_choice in ["themed", "all"]:
+                # Themed background variants
                 with open(base_output_file, 'w', encoding='utf-8') as f:
                     json.dump(base_zed_theme, f, indent=2)
                 print(f"  ✓ Created {base_output_file.name}")
-            
-            # Generate darker variant
-            if variant_choice in ["darker", "all"]:
+                
+                # Generate darker variant (themed)
                 darker_theme = create_theme_variant(base_zed_theme, "Darker", -0.15)
                 darker_output_file = zed_themes_dir / f"{theme_file.stem.replace('-color-theme', '')}-darker.json"
                 with open(darker_output_file, 'w', encoding='utf-8') as f:
                     json.dump(darker_theme, f, indent=2)
                 print(f"  ✓ Created {darker_output_file.name}")
-            
-            # Generate lighter variant
-            if variant_choice in ["lighter", "all"]:
+                
+                # Generate lighter variant (themed)
                 lighter_theme = create_theme_variant(base_zed_theme, "Lighter", 0.15)
                 lighter_output_file = zed_themes_dir / f"{theme_file.stem.replace('-color-theme', '')}-lighter.json"
                 with open(lighter_output_file, 'w', encoding='utf-8') as f:
                     json.dump(lighter_theme, f, indent=2)
                 print(f"  ✓ Created {lighter_output_file.name}")
+            
+            if variant_choice in ["dark", "all"]:
+                # Dark background variants (One Dark style)
+                dark_theme = create_dark_variant(base_zed_theme, "Dark", "base")
+                dark_output_file = zed_themes_dir / f"{theme_file.stem.replace('-color-theme', '')}-dark.json"
+                with open(dark_output_file, 'w', encoding='utf-8') as f:
+                    json.dump(dark_theme, f, indent=2)
+                print(f"  ✓ Created {dark_output_file.name}")
+                
+                # Generate darker dark variant
+                darker_dark_theme = create_dark_variant(base_zed_theme, "Dark Deeper", "darker")
+                darker_dark_output_file = zed_themes_dir / f"{theme_file.stem.replace('-color-theme', '')}-dark-deeper.json"
+                with open(darker_dark_output_file, 'w', encoding='utf-8') as f:
+                    json.dump(darker_dark_theme, f, indent=2)
+                print(f"  ✓ Created {darker_dark_output_file.name}")
+                
+                # Generate lighter dark variant
+                lighter_dark_theme = create_dark_variant(base_zed_theme, "Dark Softer", "lighter")
+                lighter_dark_output_file = zed_themes_dir / f"{theme_file.stem.replace('-color-theme', '')}-dark-softer.json"
+                with open(lighter_dark_output_file, 'w', encoding='utf-8') as f:
+                    json.dump(lighter_dark_theme, f, indent=2)
+                print(f"  ✓ Created {lighter_dark_output_file.name}")
             
         except Exception as e:
             print(f"  ✗ Error converting {theme_file.name}: {e}")
@@ -741,9 +821,27 @@ def main():
     
     if variant_choice == "all":
         print(f"\nGenerated variants:")
-        print(f"  - Base themes (original background)")
-        print(f"  - Darker variants (15% darker background)")
-        print(f"  - Lighter variants (15% lighter background)")
+        print(f"  Themed backgrounds (character-specific):")
+        print(f"    - Base themes")
+        print(f"    - Darker variants (15% darker)")
+        print(f"    - Lighter variants (15% lighter)")
+        print(f"  Dark backgrounds (One Dark style):")
+        print(f"    - Dark variants (neutral dark bg)")
+        print(f"    - Dark Deeper (darker neutral)")
+        print(f"    - Dark Softer (lighter neutral)")
+        print(f"\n  Total: {len(theme_files) * 6} themes (15 characters × 6 variants)")
+    elif variant_choice == "themed":
+        print(f"\nGenerated themed background variants:")
+        print(f"  - Base themes (character backgrounds)")
+        print(f"  - Darker variants (15% darker)")
+        print(f"  - Lighter variants (15% lighter)")
+        print(f"\n  Total: {len(theme_files) * 3} themes")
+    elif variant_choice == "dark":
+        print(f"\nGenerated dark background variants:")
+        print(f"  - Dark (neutral One Dark style)")
+        print(f"  - Dark Deeper (darker neutral)")
+        print(f"  - Dark Softer (lighter neutral)")
+        print(f"\n  Total: {len(theme_files) * 3} themes")
 
 
 if __name__ == "__main__":

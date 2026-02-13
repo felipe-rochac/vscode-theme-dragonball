@@ -1,0 +1,232 @@
+{
+  "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
+  "name": "Dragon Ball Vegeta (Dark Softer)",
+  "author": "Dragon Ball Theme",
+  "themes": [
+    {
+      "name": "Dragon Ball Vegeta (Dark Softer)",
+      "appearance": "dark",
+      "style": {
+        "background": "#2c313a",
+        "foreground": "#E0E6F8",
+        "cursor": "#1976D2",
+        "selection": "#1976D240",
+        "selection.match": "#3b3b3b25",
+        "line_number": "#8B9DC3",
+        "line_number.active": "#1976D2",
+        "title_bar.background": "#282c34",
+        "toolbar.background": "#282c34",
+        "tab_bar.background": "#282c34",
+        "tab.active_background": "#3e4451",
+        "tab.inactive_background": "#282c34",
+        "panel.background": "#2c313a",
+        "status_bar.background": "#282c34",
+        "editor.line_highlight_background": "#3e4451",
+        "editor.gutter.background": "#2c313a",
+        "editor.active_line_background": "#3e4451",
+        "border": "#1976D2",
+        "border.variant": "#1f2638",
+        "editor.background": "#2c313a",
+        "border.focused": "#1976D2",
+        "text": "#E0E6F8",
+        "players": [
+          {
+            "cursor": "#1976D2",
+            "selection": "#1976D240"
+          }
+        ],
+        "error": "#E06C75",
+        "error_background": "#E06C7520",
+        "warning": "#E5C07B",
+        "warning_background": "#E5C07B20",
+        "info": "#61AFEF",
+        "info_background": "#61AFEF20",
+        "hint": "#98C379",
+        "hint_background": "#98C37920",
+        "created": "#98C379",
+        "modified": "#E5C07B",
+        "deleted": "#E06C75",
+        "renamed": "#61AFEF",
+        "conflict": "#C678DD",
+        "search.match_background": "#1976D240",
+        "terminal.ansi.black": "#282C34",
+        "terminal.ansi.red": "#E06C75",
+        "terminal.ansi.green": "#98C379",
+        "terminal.ansi.yellow": "#E5C07B",
+        "terminal.ansi.blue": "#61AFEF",
+        "terminal.ansi.magenta": "#C678DD",
+        "terminal.ansi.cyan": "#56B6C2",
+        "terminal.ansi.white": "#ABB2BF",
+        "terminal.ansi.bright_black": "#5C6370",
+        "terminal.ansi.bright_red": "#E06C75",
+        "terminal.ansi.bright_green": "#98C379",
+        "terminal.ansi.bright_yellow": "#E5C07B",
+        "terminal.ansi.bright_blue": "#61AFEF",
+        "terminal.ansi.bright_magenta": "#C678DD",
+        "terminal.ansi.bright_cyan": "#56B6C2",
+        "terminal.ansi.bright_white": "#FFFFFF",
+        "syntax": {
+          "text": {
+            "color": "#e6edf3"
+          },
+          "comment": {
+            "color": "#6a737d",
+            "font_style": "italic"
+          },
+          "comment.doc": {
+            "color": "#6a737d",
+            "font_style": "italic"
+          },
+          "keyword": {
+            "color": "#1976D2",
+            "font_weight": 700
+          },
+          "string": {
+            "color": "#7AA3D8"
+          },
+          "string.special": {
+            "color": "#7AA3D8"
+          },
+          "string.special.path": {
+            "color": "#7AA3D8"
+          },
+          "string.special.key": {
+            "color": "#7AA3D8"
+          },
+          "string.escape": {
+            "color": "#56d364"
+          },
+          "string.regex": {
+            "color": "#7ee787"
+          },
+          "namespace": {
+            "color": "#A084CA",
+            "font_weight": 700
+          },
+          "module": {
+            "color": "#A084CA",
+            "font_weight": 700
+          },
+          "label": {
+            "color": "#A084CA",
+            "font_weight": 700
+          },
+          "link_text": {
+            "color": "#FFD700",
+            "font_weight": 700
+          },
+          "preproc": {
+            "color": "#A084CA",
+            "font_weight": 700
+          },
+          "string.special.symbol": {
+            "color": "#7AA3D8"
+          },
+          "number": {
+            "color": "#FFD700"
+          },
+          "primary": {
+            "color": "#FFD700"
+          },
+          "boolean": {
+            "color": "#FFD700",
+            "font_weight": 700
+          },
+          "primary.boolean": {
+            "color": "#FFD700",
+            "font_weight": 700
+          },
+          "constant": {
+            "color": "#FFD700",
+            "font_weight": 700
+          },
+          "constructor": {
+            "color": "#FFD700",
+            "font_weight": 700
+          },
+          "function": {
+            "color": "#FFD700",
+            "font_style": "italic"
+          },
+          "function.method": {
+            "color": "#A084CA",
+            "font_style": "italic"
+          },
+          "function.builtin": {
+            "color": "#A084CA",
+            "font_style": "italic",
+            "font_weight": 700
+          },
+          "type": {
+            "color": "#A084CA",
+            "font_weight": 700
+          },
+          "type.interface": {
+            "color": "#FFD700",
+            "font_weight": 700
+          },
+          "type.builtin": {
+            "color": "#1976D2",
+            "font_weight": 700
+          },
+          "variable": {
+            "color": "#e6edf3"
+          },
+          "variable.member": {
+            "color": "#e6edf3"
+          },
+          "variable.parameter": {
+            "color": "#FFD700"
+          },
+          "variable.special": {
+            "color": "#e6edf3"
+          },
+          "property": {
+            "color": "#FFD700",
+            "font_weight": 700
+          },
+          "variant": {
+            "color": "#FFD700",
+            "font_weight": 700
+          },
+          "tag": {
+            "color": "#1976D2",
+            "font_weight": 700
+          },
+          "enum": {
+            "color": "#A084CA",
+            "font_weight": 700
+          },
+          "operator": {
+            "color": "#1976D2"
+          },
+          "punctuation.bracket": {
+            "color": "#c9d1d9"
+          },
+          "punctuation.delimiter": {
+            "color": "#c9d1d9"
+          },
+          "link_uri": {
+            "color": "#FFD700",
+            "font_weight": 700
+          },
+          "title.special": {
+            "color": "#FFD700",
+            "font_weight": 700
+          },
+          "hint": {
+            "color": "#FFD700",
+            "font_weight": 700
+          },
+          "keyword.makefile": {
+            "color": "#1976D2",
+            "font_weight": 700
+          },
+          "punctuation.special": {
+            "color": "#c9d1d9"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -67,14 +67,14 @@
         "terminal.ansi.bright_white": "#FFFFFF",
         "syntax": {
           "text": {
-            "color": "#F2F2F2"
+            "color": "#e6edf3"
           },
           "comment": {
-            "color": "#7C7C8C",
+            "color": "#6a737d",
             "font_style": "italic"
           },
           "comment.doc": {
-            "color": "#FFD700",
+            "color": "#6a737d",
             "font_style": "italic"
           },
           "keyword": {
@@ -82,52 +82,62 @@
             "font_weight": 700
           },
           "string": {
-            "color": "#7C7C8C"
+            "color": "#98d3ff"
           },
           "string.special": {
-            "color": "#FFD700"
+            "color": "#98d3ff"
           },
           "string.special.path": {
-            "color": "#FFD700"
+            "color": "#98d3ff"
           },
           "string.special.key": {
-            "color": "#FFD700"
+            "color": "#98d3ff"
+          },
+          "string.escape": {
+            "color": "#56d364"
+          },
+          "string.regex": {
+            "color": "#7ee787"
           },
           "namespace": {
-            "color": "#23232A",
+            "color": "#7C7C8C",
             "font_weight": 700
           },
           "module": {
-            "color": "#23232A",
+            "color": "#7C7C8C",
             "font_weight": 700
           },
           "label": {
-            "color": "#23232A",
+            "color": "#7C7C8C",
             "font_weight": 700
           },
           "link_text": {
-            "color": "#FF2D2D",
+            "color": "#FFD700",
             "font_weight": 700
           },
           "preproc": {
-            "color": "#23232A",
+            "color": "#7C7C8C",
             "font_weight": 700
           },
           "string.special.symbol": {
-            "color": "#7C7C8C"
+            "color": "#98d3ff"
           },
           "number": {
             "color": "#FF2D2D"
           },
           "primary": {
-            "color": "#FFD700"
+            "color": "#FF2D2D"
           },
           "boolean": {
             "color": "#FF2D2D",
             "font_weight": 700
           },
           "primary.boolean": {
-            "color": "#FFD700",
+            "color": "#FF2D2D",
+            "font_weight": 700
+          },
+          "constant": {
+            "color": "#FF2D2D",
             "font_weight": 700
           },
           "constructor": {
@@ -135,24 +145,24 @@
             "font_weight": 700
           },
           "function": {
-            "color": "#FF2D2D",
+            "color": "#FFD700",
             "font_style": "italic"
           },
           "function.method": {
-            "color": "#FF2D2D",
+            "color": "#7C7C8C",
             "font_style": "italic"
           },
           "function.builtin": {
-            "color": "#FF2D2D",
+            "color": "#7C7C8C",
             "font_style": "italic",
             "font_weight": 700
           },
           "type": {
-            "color": "#FF2D2D",
+            "color": "#7C7C8C",
             "font_weight": 700
           },
           "type.interface": {
-            "color": "#FF2D2D",
+            "color": "#FFD700",
             "font_weight": 700
           },
           "type.builtin": {
@@ -160,32 +170,41 @@
             "font_weight": 700
           },
           "variable": {
-            "color": "#F2F2F2"
+            "color": "#e6edf3"
           },
           "variable.member": {
-            "color": "#F2F2F2"
+            "color": "#e6edf3"
+          },
+          "variable.parameter": {
+            "color": "#FFD700"
+          },
+          "variable.special": {
+            "color": "#e6edf3"
           },
           "property": {
-            "color": "#FFD700",
+            "color": "#FF2D2D",
             "font_weight": 700
           },
           "variant": {
-            "color": "#FFD700",
+            "color": "#FF2D2D",
             "font_weight": 700
           },
           "tag": {
-            "color": "#FFD700",
+            "color": "#FF2D2D",
             "font_weight": 700
           },
           "enum": {
-            "color": "#FFD700",
+            "color": "#7C7C8C",
             "font_weight": 700
           },
-          "punctuation.bracket": {
+          "operator": {
             "color": "#FF2D2D"
           },
+          "punctuation.bracket": {
+            "color": "#c9d1d9"
+          },
           "punctuation.delimiter": {
-            "color": "#FFD700"
+            "color": "#c9d1d9"
           },
           "link_uri": {
             "color": "#FFD700",
@@ -196,18 +215,15 @@
             "font_weight": 700
           },
           "hint": {
-            "color": "#FFD700",
+            "color": "#FF2D2D",
             "font_weight": 700
           },
           "keyword.makefile": {
-            "color": "#FFD700",
+            "color": "#FF2D2D",
             "font_weight": 700
           },
-          "variable.special": {
-            "color": "#F2F2F2"
-          },
           "punctuation.special": {
-            "color": "#FFD700"
+            "color": "#c9d1d9"
           }
         }
       }
