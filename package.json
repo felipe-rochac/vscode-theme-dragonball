@@ -2,7 +2,7 @@
   "name": "vscode-theme-dragonball",
   "displayName": "Dragon Ball Themes - Professional Dark Themes",
   "description": "Professional Dragon Ball-inspired VS Code themes with One Dark-style rich syntax highlighting, 50+ scopes, and excellent readability. Zed editor compatible.",
-  "version": "2.0.0",
+  "version": "2.2.0",
   "publisher": "kyrone",
   "license": "MIT",
   "icon": "images/logo.png",
@@ -31,7 +31,40 @@
   "categories": [
     "Themes"
   ],
+  "main": "./dist/extension.js",
+  "activationEvents": [
+    "onCommand:dragonBall.workspaceColors.configure",
+    "onCommand:dragonBall.workspaceColors.disable",
+    "onStartupFinished"
+  ],
+  "scripts": {
+    "lint": "eslint src scripts test",
+    "build": "node scripts/build.js",
+    "pretest": "npm run build",
+    "test": "mocha test/workspace-colors.test.js",
+    "test:integration": "node scripts/build.js && node test/run-extension-tests.js",
+    "vscode:prepublish": "npm run build",
+    "package:local": "node scripts/package.js",
+    "verify:vsix": "node scripts/verify-vsix.js"
+  },
+  "devDependencies": {
+    "@vscode/test-electron": "2.4.1",
+    "@vscode/vsce": "2.32.0",
+    "eslint": "9.11.1",
+    "mocha": "10.7.3",
+    "yauzl": "3.1.3"
+  },
   "contributes": {
+    "commands": [
+      {
+        "command": "dragonBall.workspaceColors.configure",
+        "title": "Dragon Ball: Configure Workspace Colors"
+      },
+      {
+        "command": "dragonBall.workspaceColors.disable",
+        "title": "Dragon Ball: Disable Workspace Colors"
+      }
+    ],
     "themes": [
       {
         "label": "Dragon Ball Goku",

@@ -1,1 +1,6 @@
 *.vsix
+node_modules/
+dist/
+artifacts/
+.vscode-test/
+.test-workspaces/

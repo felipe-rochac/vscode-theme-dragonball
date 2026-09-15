@@ -10,7 +10,7 @@ All themes have been upgraded with:
 - **Multiple color tiers** for better code differentiation
 - **Expanded language support** (Go, TypeScript, Python, Terraform, YAML, JSON, Makefile, and more)
 - **Special highlighting** for operators, parameters, decorators, and annotations
-- **Zed editor compatible** (see [ZED_THEMES.md](ZED_THEMES.md))
+- **Zed editor compatible** (see [ZED_THEMES.md on GitHub](https://github.com/felipe-rochac/vscode-theme-dragonball/blob/main/ZED_THEMES.md))
 
 ## Included Themes
 
@@ -80,15 +80,72 @@ Each theme maintains its character-specific personality while providing professi
 4. Use `Ctrl+K Ctrl+T` to switch between themes
 
 ### For Zed Editor
-See [ZED_THEMES.md](ZED_THEMES.md) for instructions on using these themes in Zed editor.
+See [ZED_THEMES.md on GitHub](https://github.com/felipe-rochac/vscode-theme-dragonball/blob/main/ZED_THEMES.md) for instructions on using these themes in Zed editor.
+
+## New in 2.2.0: Workspace Colors
+
+Distinguish workspace windows with an explicit accent color, similar to Peacock. Disabled by
+default; nothing is written until you run the configure command.
+
+- `Dragon Ball: Configure Workspace Colors` — choose a custom `#RRGGBB`/`#RGB` hex color or one
+  of the 15 included Dragon Ball theme presets. The selected hue is softened for comfortable
+  window chrome, with optional status and activity bars plus recommended darker
+  **Sidebars / Copilot Chat** and **Panels / Terminal** surfaces. The recommended surfaces are
+  preselected in the surface picker; status and activity bars start unchecked. Nothing is applied
+  until you confirm the picker, and Escape cancels without writes. Terminal ANSI colors and the
+  editor canvas remain controlled by the active syntax theme. The title bar is always included.
+- `Dragon Ball: Disable Workspace Colors` — restores only the keys this extension owns to their
+  original workspace value (or removes them if they didn't exist before), leaving any unrelated
+  or externally edited settings untouched.
+
+Writes always target workspace-level settings (`ConfigurationTarget.Workspace`) — never your user
+/global settings, and never the theme JSON or `workbench.colorTheme` itself. Run
+**Disable Workspace Colors** before uninstalling the extension; workspace settings persist after
+uninstall, and uninstall hooks are not a reliable way to restore them.
+
+A `$(paintcan)` status-bar item is registered after startup and opens the configure command
+directly; it appears in every window (including ones where configuring is refused, e.g. an empty
+or unsaved multi-root workspace) and is not shown if you've hidden the status bar or an individual
+item, or in Zen Mode — the Command Palette commands above remain available as a fallback either
+way.
+
+**Known limitations:**
+- VS Code's configuration API offers no atomic compare-and-swap or writer attribution, so a
+  conflicting external write between this extension's read and its settings update is possible in
+  principle; preflight checks, event tracking, and a read-back after every write reduce this risk
+  but do not eliminate it against an arbitrary concurrent writer.
+- Nothing is written automatically: installation, startup, and opening/reloading a workspace never
+  change settings on their own — only an explicit configure command does.
+- Run **Disable Workspace Colors** before uninstalling; workspace settings persist after uninstall
+  and uninstall hooks are not a reliable way to restore them.
+- Native OS title bars may ignore `workbench` title colors. VS Code typically renders these
+  accents in its custom title bar. This extension never changes `window.titleBarStyle` automatically.
 
 ## Packaging & Distribution
-To package the theme for distribution:
+Use Node.js 22 LTS and the lockfile-pinned repository tooling. From the repository root, build
+and package version 2.2.0 (including Workspace Colors) for local testing and release:
 ```bash
-npm install -g @vscode/vsce
-npx vsce package
+npm ci
+npm run build
+npm run package:local
+npm run verify:vsix
 ```
-This will generate a `.vsix` file you can install or share.
+The archive filename follows the manifest version, currently
+`artifacts/vscode-theme-dragonball-2.2.0-workspace-colors.vsix`.
+
+### Publishing 2.2.0
+
+After automated checks, isolated installation/UI checks, and independent review pass, manually
+publish the exact validated archive with the repository-local VSCE version:
+
+```bash
+npx --no-install vsce publish --packagePath "artifacts/vscode-theme-dragonball-2.2.0-workspace-colors.vsix"
+```
+
+Publishing requires a Visual Studio Marketplace personal access token and is intentionally not
+performed by the local packaging command. This command uses the archive's existing version; it
+does not request a version bump, rebuild, commit, or tag. Do not put credentials in this README
+or command history.
 
 ### How to install a `.vsix` file
 1. Open VS Code
@@ -117,6 +174,15 @@ Each theme provides:
 - ✅ Consistent UI design across all themes
 
 ## Changelog
+
+### v2.2.0 - Workspace Colors
+- Added Peacock-style workspace window accents with custom hex colors
+- Added presets matching all 15 included Dragon Ball themes
+- Added quick access from the status-bar paint-can item
+- Always includes the title bar, with optional status bar, activity bar, sidebar/Copilot Chat, and panel/terminal surfaces
+- Preselects sidebar/chat and panel/terminal in the picker; status and activity bars start unchecked
+- Added safe conflict detection, ownership tracking, and restoration of previous workspace colors
+- Preserved syntax-theme editor colors and terminal ANSI colors
 
 ### v2.0.0 - Enhanced Color Palettes
 - Added One Dark-style rich syntax highlighting

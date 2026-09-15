@@ -1,4 +1,8 @@
-.vscode/
-node_modules/
-.vscode-test/
-*.vsix
+**
+!package.json
+!LICENSE
+!README.md
+!CHANGELOG.md
+!dist/**
+!themes/**
+!images/**
