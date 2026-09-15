@@ -2,6 +2,30 @@
 
 All notable changes to the Dragon Ball VS Code Themes will be documented in this file.
 
+## [2.2.0] - 2026-09-15
+
+### Workspace Colors
+- Added opt-in, Peacock-style workspace accents independent of the selected syntax theme.
+- Added custom `#RGB` and `#RRGGBB` input plus presets for all 15 included Dragon Ball themes.
+- Added a persistent status-bar paint-can launcher and Command Palette configure/disable commands.
+- Always includes the title bar, with selectable status bar, activity bar, sidebar/Copilot Chat, and panel/terminal surfaces.
+- Preselects sidebar/chat and panel/terminal in the surface picker; status and activity bars start unchecked. Confirmation is required before applying colors, and Escape cancels without writes.
+- Softened bright accents for comfortable window chrome while preserving readable foreground contrast.
+- Kept the editor canvas and terminal ANSI palette controlled by the active syntax theme.
+
+### Safety and Compatibility
+- Writes only to workspace-level `workbench.colorCustomizations`; global settings and theme JSON files are never changed.
+- Preserves unrelated color customizations and restores only keys still owned by this extension.
+- Detects existing, inherited, theme-specific, and externally changed color overrides before takeover or restoration.
+- Handles interrupted writes through explicit recovery instead of automatic destructive restoration.
+- Supports folder and saved multi-root workspaces and rejects unsupported empty or untitled workspaces without writes.
+- Retains compatibility with VS Code 1.60.0 and current stable releases.
+
+### Tooling and Validation
+- Added reproducible local build, lint, unit, Extension Host, packaging, and VSIX archive-validation scripts.
+- Added a strict package allowlist containing runtime output, all themes, images, manifest, license, README, and changelog.
+- Added focused tests for color contrast, ownership, restoration, cancellation, conflict races, startup activation, and launcher lifecycle.
+
 ## [2.0.0] - 2026-02-10
 
 ### Major Enhancements ✨
