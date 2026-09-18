@@ -30,6 +30,21 @@ var SURFACE_KEYS = {
     'sideBarSectionHeader.background',
     'sideBarSectionHeader.foreground'
   ],
+  agent: [
+    'editor.background',
+    'editor.foreground',
+    'chat.requestBackground',
+    'chat.requestBorder',
+    'chat.requestBubbleBackground',
+    'chat.requestBubbleHoverBackground',
+    'chat.slashCommandBackground',
+    'chat.slashCommandForeground',
+    'chat.avatarBackground',
+    'chat.avatarForeground',
+    'inlineChat.background',
+    'inlineChat.foreground',
+    'inlineChat.border'
+  ],
   panel: [
     'panel.background',
     'panel.border',
@@ -75,6 +90,8 @@ var ACTIVITY_INACTIVE_BLEND_FACTOR = 0.45;
 var CHROME_BLEND_FACTOR = 0.42;
 var SIDEBAR_BLEND_FACTOR = 0.82;
 var SIDEBAR_HEADER_BLEND_FACTOR = 0.68;
+var AGENT_BLEND_FACTOR = 0.84;
+var AGENT_REQUEST_BLEND_FACTOR = 0.72;
 var PANEL_BLEND_FACTOR = 0.86;
 var COMFORT_BASE = '#111820';
 var MIN_CONTRAST = 4.5;
@@ -241,6 +258,25 @@ function buildSurfaceColors(accentHex, surfaces) {
     colors['sideBarTitle.foreground'] = sidebarFg;
     colors['sideBarSectionHeader.background'] = sidebarHeaderBg;
     colors['sideBarSectionHeader.foreground'] = pickForeground(sidebarHeaderBg);
+  }
+
+  if (selected.agent) {
+    var agentBg = deriveComfortBackground(normalized, AGENT_BLEND_FACTOR);
+    var agentFg = pickForeground(agentBg);
+    var agentRequestBg = deriveComfortBackground(normalized, AGENT_REQUEST_BLEND_FACTOR);
+    colors['editor.background'] = agentBg;
+    colors['editor.foreground'] = agentFg;
+    colors['chat.requestBackground'] = agentRequestBg;
+    colors['chat.requestBorder'] = chromeBg;
+    colors['chat.requestBubbleBackground'] = agentRequestBg;
+    colors['chat.requestBubbleHoverBackground'] = deriveComfortBackground(normalized, SIDEBAR_HEADER_BLEND_FACTOR);
+    colors['chat.slashCommandBackground'] = chromeBg;
+    colors['chat.slashCommandForeground'] = pickForeground(chromeBg);
+    colors['chat.avatarBackground'] = chromeBg;
+    colors['chat.avatarForeground'] = pickForeground(chromeBg);
+    colors['inlineChat.background'] = agentRequestBg;
+    colors['inlineChat.foreground'] = pickForeground(agentRequestBg);
+    colors['inlineChat.border'] = chromeBg;
   }
 
   if (selected.panel) {

@@ -82,7 +82,7 @@ Each theme maintains its character-specific personality while providing professi
 ### For Zed Editor
 See [ZED_THEMES.md on GitHub](https://github.com/felipe-rochac/vscode-theme-dragonball/blob/main/ZED_THEMES.md) for instructions on using these themes in Zed editor.
 
-## New in 2.2.0: Workspace Colors
+## New in 2.2.1: Workspace and Agent Colors
 
 Distinguish workspace windows with an explicit accent color, similar to Peacock. Disabled by
 default; nothing is written until you run the configure command.
@@ -90,10 +90,13 @@ default; nothing is written until you run the configure command.
 - `Dragon Ball: Configure Workspace Colors` — choose a custom `#RRGGBB`/`#RGB` hex color or one
   of the 15 included Dragon Ball theme presets. The selected hue is softened for comfortable
   window chrome, with optional status and activity bars plus recommended darker
-  **Sidebars / Copilot Chat** and **Panels / Terminal** surfaces. The recommended surfaces are
+  **Sidebars / Copilot Chat**, **Agent Chat / Editor**, and **Panels / Terminal** surfaces. The recommended surfaces are
   preselected in the surface picker; status and activity bars start unchecked. Nothing is applied
-  until you confirm the picker, and Escape cancels without writes. Terminal ANSI colors and the
-  editor canvas remain controlled by the active syntax theme. The title bar is always included.
+  until you confirm the picker, and Escape cancels without writes. **Agent Chat / Editor** colors
+  editor-hosted Agent Chat, chat requests, and inline chat. Because VS Code has no dedicated Agent
+  Chat canvas color, this option also colors normal editor backgrounds in that workspace; uncheck
+  it to preserve the syntax theme's editor canvas. Terminal ANSI colors remain controlled by the
+  active syntax theme. The title bar is always included.
 - `Dragon Ball: Disable Workspace Colors` — restores only the keys this extension owns to their
   original workspace value (or removes them if they didn't exist before), leaving any unrelated
   or externally edited settings untouched.
@@ -123,7 +126,7 @@ way.
 
 ## Packaging & Distribution
 Use Node.js 22 LTS and the lockfile-pinned repository tooling. From the repository root, build
-and package version 2.2.0 (including Workspace Colors) for local testing and release:
+and package version 2.2.1 (including Agent Chat colors) for local testing and release:
 ```bash
 npm ci
 npm run build
@@ -131,15 +134,15 @@ npm run package:local
 npm run verify:vsix
 ```
 The archive filename follows the manifest version, currently
-`artifacts/vscode-theme-dragonball-2.2.0-workspace-colors.vsix`.
+`artifacts/vscode-theme-dragonball-2.2.1-workspace-colors.vsix`.
 
-### Publishing 2.2.0
+### Publishing 2.2.1
 
 After automated checks, isolated installation/UI checks, and independent review pass, manually
 publish the exact validated archive with the repository-local VSCE version:
 
 ```bash
-npx --no-install vsce publish --packagePath "artifacts/vscode-theme-dragonball-2.2.0-workspace-colors.vsix"
+npx --no-install vsce publish --packagePath "artifacts/vscode-theme-dragonball-2.2.1-workspace-colors.vsix"
 ```
 
 Publishing requires a Visual Studio Marketplace personal access token and is intentionally not
@@ -174,6 +177,12 @@ Each theme provides:
 - ✅ Consistent UI design across all themes
 
 ## Changelog
+
+### v2.2.1 - Agent Chat Colors
+- Added an Agent Chat / Editor surface for editor-hosted Copilot Agent sessions and inline chat
+- Added hue-matched chat request, bubble, slash-command, and avatar colors
+- Restores the original editor and chat colors when the surface is deselected or Workspace Colors is disabled
+- Selecting this surface also colors normal editor backgrounds because VS Code shares that canvas color
 
 ### v2.2.0 - Workspace Colors
 - Added Peacock-style workspace window accents with custom hex colors

@@ -188,7 +188,7 @@ describe('presets', function () {
 });
 
 describe('Quick Pick contract (Revision 3)', function () {
-  it('presents only sidebar/chat and panel/terminal as picked and cancels without writes', async function () {
+  it('presents sidebar/chat, agent/editor, and panel/terminal as picked and cancels without writes', async function () {
     var fake = createFakeVscode({ quickPicks: [{ kind: 'preset', preset: 'goku' }, undefined] });
     var context = createFakeContext();
     extensionModule.createExtension(fake.vscode).activate(context);
@@ -202,6 +202,7 @@ describe('Quick Pick contract (Revision 3)', function () {
       return { label: item.label, surface: item.surface, picked: item.picked };
     }), [
       { label: 'Sidebars / Copilot Chat', surface: 'sidebar', picked: true },
+      { label: 'Agent Chat / Editor', surface: 'agent', picked: true },
       { label: 'Panels / Terminal', surface: 'panel', picked: true },
       { label: 'Status Bar', surface: 'status', picked: false },
       { label: 'Activity Bar', surface: 'activity', picked: false }
@@ -245,7 +246,7 @@ describe('Quick Pick contract (Revision 3)', function () {
     await fake.registeredCommands['dragonBall.workspaceColors.configure']();
 
     assert.deepStrictEqual(fake.state.workspaceValue, wc.buildSurfaceColors(wc.PRESETS.goku.hex, {
-      title: true, sidebar: true, panel: true, status: false, activity: false
+      title: true, sidebar: true, agent: true, panel: true, status: false, activity: false
     }));
     assert.strictEqual(fake.updateCalls.length, 1);
     assert.strictEqual(fake.updateCalls[0].target, fake.vscode.ConfigurationTarget.Workspace);
@@ -321,6 +322,18 @@ describe('buildSurfaceColors', function () {
     assert.ok(wc.relativeLuminance(colors['sideBar.background']) < 0.12);
     assert.ok(wc.contrastRatio(colors['sideBar.background'], colors['sideBar.foreground']) >= 4.5);
     assert.ok(wc.contrastRatio(colors['sideBarSectionHeader.background'], colors['sideBarSectionHeader.foreground']) >= 4.5);
+  });
+
+  it('creates a nonblack Agent Chat and editor surface with readable text', function () {
+    var colors = wc.buildSurfaceColors('#1976D2', { title: true, agent: true });
+    assert.deepStrictEqual(
+      Object.keys(colors).filter(function (key) { return wc.SURFACE_KEYS.agent.indexOf(key) !== -1; }).sort(),
+      wc.SURFACE_KEYS.agent.slice().sort()
+    );
+    assert.notStrictEqual(colors['editor.background'], '#000000');
+    assert.ok(wc.relativeLuminance(colors['editor.background']) < 0.12);
+    assert.ok(wc.contrastRatio(colors['editor.background'], colors['editor.foreground']) >= 4.5);
+    assert.ok(wc.contrastRatio(colors['chat.requestBackground'], colors['inlineChat.foreground']) >= 4.5);
   });
 
   it('creates a dark Panels and Terminal surface without owning ANSI or editor colors', function () {
@@ -532,9 +545,9 @@ describe('validateOwnershipRecord (review1 P1 #4)', function () {
     assert.strictEqual(wc.validateOwnershipRecord(record).valid, false);
   });
 
-  it('rejects an unknown/foreign key such as editor.foreground', function () {
+  it('rejects an unknown/foreign key such as minimap.background', function () {
     var record = validRecord();
-    record.entries['editor.foreground'] = { hadValue: true, originalValue: '#EEEEEE', lastApplied: '#1976D2' };
+    record.entries['minimap.background'] = { hadValue: true, originalValue: '#EEEEEE', lastApplied: '#1976D2' };
     assert.strictEqual(wc.validateOwnershipRecord(record).valid, false);
   });
 
