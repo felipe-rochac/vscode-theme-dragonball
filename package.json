@@ -2,7 +2,7 @@
   "name": "vscode-theme-dragonball",
   "displayName": "Dragon Ball Themes - Professional Dark Themes",
   "description": "Professional Dragon Ball-inspired VS Code themes with One Dark-style rich syntax highlighting, 50+ scopes, and excellent readability. Zed editor compatible.",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "publisher": "kyrone",
   "license": "MIT",
   "icon": "images/logo.png",

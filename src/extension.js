@@ -92,6 +92,7 @@ function createExtension(vscode) {
   function promptForSurfaces() {
     var items = [
       { label: 'Sidebars / Copilot Chat', description: 'Recommended', picked: true, surface: 'sidebar' },
+      { label: 'Agent Chat / Editor', description: 'Also colors code editor backgrounds', picked: true, surface: 'agent' },
       { label: 'Panels / Terminal', description: 'Recommended', picked: true, surface: 'panel' },
       { label: 'Status Bar', picked: false, surface: 'status' },
       { label: 'Activity Bar', picked: false, surface: 'activity' }
@@ -106,7 +107,7 @@ function createExtension(vscode) {
       if (picked === undefined) {
         return null;
       }
-      var surfaces = { title: true, status: false, activity: false, sidebar: false, panel: false };
+      var surfaces = { title: true, status: false, activity: false, sidebar: false, agent: false, panel: false };
       picked.forEach(function (item) {
         surfaces[item.surface] = true;
       });

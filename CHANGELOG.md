@@ -2,6 +2,14 @@
 
 All notable changes to the Dragon Ball VS Code Themes will be documented in this file.
 
+## [2.2.1] - 2026-09-18
+
+### Agent Chat Colors
+- Added a recommended **Agent Chat / Editor** surface for editor-hosted Copilot Agent sessions.
+- Colors the editor canvas plus supported chat request, bubble, slash-command, avatar, and inline-chat elements with softened character accents.
+- Clearly separates this option because VS Code exposes no dedicated Agent Chat canvas color; selecting it also colors normal code editor backgrounds in that workspace.
+- Tracks and restores the new keys with the same conflict detection and safe ownership behavior as the existing surfaces.
+
 ## [2.2.0] - 2026-09-15
 
 ### Workspace Colors
